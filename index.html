@@ -109,7 +109,7 @@
 
     </div>
 
-    <section id="stats-section">
+    <section id="carousel-section">
 
         <div id="carouselHomePage" class="carousel slide" data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators width-limiter mb-3">
@@ -157,7 +157,7 @@
 
     </section>
 
-    <section class="width-limiter">
+    <section id="stats-section" class="width-limiter">
 
         <div class="cards-stat-container">
 
@@ -183,12 +183,12 @@
 
     <section id="for-all-family-section" class="py-5">
 
-        <div class="articles width-limiter d-flex flex-column">
+        <div class="width-limiter d-flex flex-column">
 
-            <div class="articles-topbar">
-                <h2 class="articles-topbar__header">Все для семьи</h2>
+            <div class="section-topbar">
+                <h2 class="section-topbar__header">Все для семьи</h2>
 
-                <div class="articles-topbar__buttons btn-group mr-3" role="group">
+                <div class="section-topbar__buttons btn-group mr-3" role="group">
                     <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-all"
                         autocomplete="off" checked>
                     <label class="btn btn-top-line px-0 mr-4" for="articles-filter-all">
@@ -214,11 +214,11 @@
                     </label>
                 </div>
 
-                <div class="articles-topbar__nav-buttons">
-                    <a class="btn articles-topbar__nav-button btn-sharp border-right-0 border-bottom-0 px-3">
+                <div class="section-topbar__nav-buttons">
+                    <a class="btn section-topbar__nav-button btn-sharp border-right-0 border-bottom-0 px-3">
                         <i class="fa-solid fa-angle-left fa-lg"></i>
                     </a>
-                    <a class="btn articles-topbar__nav-button btn-sharp border-bottom-0 px-3">
+                    <a class="btn section-topbar__nav-button btn-sharp border-bottom-0 px-3">
                         <i class="fa-solid fa-angle-right fa-lg"></i>
                     </a>
                 </div>
@@ -226,7 +226,7 @@
 
             <hr class="w-100 mt-0 mb-5">
 
-            <div class="d-flex justify-content-center">
+            <div id="articles-container" class="d-flex justify-content-center">
 
                 <a class="card card-article mr-4" href="">
                     <div class="card-img-top-wrapper">
@@ -324,48 +324,36 @@
 
     </section>
 
-    <section class="width-limiter pt-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu sem ultrices, varius odio ut, auctor sapien.
-        In hac
-        habitasse platea dictumst. Sed tincidunt tempor varius. Curabitur tempus vitae lacus eget pretium. Sed hendrerit
-        tellus
-        odio, eu lacinia risus gravida eu. Suspendisse velit erat, porta ut arcu et, vehicula lobortis velit. Orci
-        varius
-        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean laoreet volutpat pulvinar.<br>
+    <section id="qa-section" class="py-5">
 
-        Etiam congue ultricies turpis, ut rutrum elit egestas vitae. Donec eu vehicula dolor, facilisis maximus tellus.
-        In nibh
-        nunc, aliquet id aliquet vitae, porta vel arcu. Cras volutpat turpis ac nulla rutrum egestas. Sed semper a massa
-        at
-        molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec
-        bibendum,
-        mi nec efficitur consequat, lorem lacus laoreet neque, in commodo eros ligula in risus. Fusce ultricies, enim
-        blandit
-        semper consectetur, odio lectus iaculis felis, a aliquam elit urna ut quam. Pellentesque dignissim ipsum diam,
-        ut
-        interdum massa porta nec. Fusce dapibus ipsum id libero sollicitudin pretium. Donec lectus nisl, mollis eget
-        quam a,
-        dapibus hendrerit dui. Cras aliquet, felis dapibus aliquam viverra, nibh dui dignissim arcu, ut vestibulum
-        mauris est
-        non nibh. Proin sit amet lacus sit amet libero ornare iaculis. Nullam a ultrices nisl.<br>
+        <div class="width-limiter d-flex flex-column">
 
-        Ut pulvinar mi suscipit, feugiat ipsum quis, luctus quam. In hac habitasse platea dictumst. Aenean magna nisl,
-        commodo
-        et eros sed, venenatis consectetur dolor. Mauris hendrerit viverra porttitor. Quisque rutrum mauris ut sem
-        condimentum
-        luctus. Fusce ut quam tempor, volutpat libero sit amet, iaculis risus. Ut ut leo at velit tincidunt iaculis. Ut
-        mattis,
-        purus id eleifend porttitor, dolor nisl lacinia nibh, sit amet tempor est elit vel justo.
+            <div class="section-topbar">
+                <h2 class="section-topbar__header">Вопрос - Ответ</h2>
+
+                <h4>Search</h4>
+            </div>
+
+            <hr class="w-100 mt-0 mb-5">
+
+            <div class="d-flex justify-content-center">
+
+
+
+            </div>
+
+        </div>
+
     </section>
 
     <section id="events-section" class="py-5">
 
-        <div class="articles dark width-limiter d-flex flex-column">
+        <div class="dark width-limiter d-flex flex-column">
 
-            <div class="articles-topbar">
-                <h2 class="articles-topbar__header">События</h2>
+            <div class="section-topbar">
+                <h2 class="section-topbar__header">События</h2>
 
-                <div class="articles-topbar__buttons btn-group mr-3" role="group">
+                <div class="section-topbar__buttons btn-group mr-3" role="group">
                     <input type="radio" class="btn-check" name="events-filter" id="events-filter-all" autocomplete="off"
                         checked>
                     <label class="btn btn-top-line px-0 mr-4" for="events-filter-all">
@@ -391,11 +379,11 @@
                     </label>
                 </div>
 
-                <div class="articles-topbar__nav-buttons">
-                    <a class="btn articles-topbar__nav-button btn-sharp border-right-0 border-bottom-0 px-3">
+                <div class="section-topbar__nav-buttons">
+                    <a class="btn section-topbar__nav-button btn-sharp border-right-0 border-bottom-0 px-3">
                         <i class="fa-solid fa-angle-left fa-lg"></i>
                     </a>
-                    <a class="btn articles-topbar__nav-button btn-sharp border-bottom-0 px-3">
+                    <a class="btn section-topbar__nav-button btn-sharp border-bottom-0 px-3">
                         <i class="fa-solid fa-angle-right fa-lg"></i>
                     </a>
                 </div>
@@ -403,7 +391,7 @@
 
             <hr class="w-100 mt-0 mb-5">
 
-            <div class="d-flex justify-content-center">
+            <div class="events-container d-flex justify-content-center">
 
                 <a class="card card-article card-article-immersive mr-4" href="">
                     <div class="card-img-top-wrapper">
@@ -477,7 +465,7 @@
 
             </div>
 
-            <button type="button" class="btn btn-wide articles__btn-show mt-5 align-self-center">
+            <button type="button" class="btn btn-wide section__btn-show mt-5 align-self-center">
                 Посмотреть всё
             </button>
 
