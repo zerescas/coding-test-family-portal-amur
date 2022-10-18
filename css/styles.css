@@ -1,3 +1,127 @@
 :root {
-    --accent: #B7C136;
+    /*==========
+    Colors 
+    ==========*/
+
+    --site-accent: #B7C136;
+
+    /* Social Accents */
+    --vk-accent: #5795aa;
+    --twitter-accent: #7cb3ce;
+    --facebook-accent: #5795aa;
+    --instagram-accent: #5878b7;
+    --ok-accent: #f2a64c;
+
+    /*==========
+    Other 
+    ==========*/
+
+    --nav-height: 50px;
+    --nav-link-padding: 2rem;
+    --nav-corners-border-radius: .35rem;
+}
+
+.bg-accent {
+    background-color: var(--site-accent);
+}
+
+/* Buttons */
+
+.btn {
+    padding: .7rem 3rem !important;
+    font-size: 14px;
+}
+
+.btn-outline-accent {
+    color: black;
+    border-color: black;
+}
+
+.btn-outline-accent:hover {
+    background-color: var(--site-accent);
+    color: white;
+    border-color: var(--site-accent);
+}
+
+/* Socials */
+
+.social {
+    align-items: center;
+    border-radius: 100%;
+    border: solid white 1px;
+    display: flex;
+    filter: brightness(.4) sepia(50%) hue-rotate(120deg);
+    height: 29px;
+    justify-content: center;
+    margin-right: 1.5rem;
+    position: relative;
+    transition: filter 0.15s, background-color 0.15s, border-color 0.15s;
+    width: 29px;
+}
+
+.social img {
+    height: calc(100% - 50%);
+    width: calc(100% - 50%);
+}
+
+.social:hover {
+    filter: none;
+}
+
+.social--vk:hover {
+    background-color: var(--vk-accent);
+    border-color: var(--vk-accent);
+}
+
+.social--twitter:hover {
+    background-color: var(--twitter-accent);
+    border-color: var(--twitter-accent);
+}
+
+.social--facebook:hover {
+    background-color: var(--facebook-accent);
+    border-color: var(--facebook-accent);
+}
+
+.social--instagram:hover {
+    background-color: var(--instagram-accent);
+    border-color: var(--instagram-accent);
+}
+
+.social--ok:hover {
+    background-color: var(--ok-accent);
+    border-color: var(--ok-accent);
+}
+
+/* Section width limiter */
+
+.width-limiter {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* Navbar's left, right decorators */
+
+.navbar-infinity {
+    position: relative;
+}
+
+.navbar-infinity::before,
+.navbar-infinity::after {
+    content: "";
+    background-color: var(--site-accent);
+    height: 100%;
+    width: calc(100vw - 1100px);
+    position: absolute;
+    height: var(--nav-height);
+}
+
+.navbar-infinity::before {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.navbar-infinity::after {
+    right: 0%;
+    transform: translateX(100%);
 }

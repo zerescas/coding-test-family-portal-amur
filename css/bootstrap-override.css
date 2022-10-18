@@ -1,0 +1,51 @@
+/* Bootstrap override */
+
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+/* Nav */
+
+.left-nav .navbar-nav {
+    border-radius: 0 var(--nav-corners-border-radius) var(--nav-corners-border-radius) 0;
+    overflow: hidden;
+}
+
+.right-nav .navbar-nav {
+    border-radius: var(--nav-corners-border-radius) 0 0 var(--nav-corners-border-radius);
+    overflow: hidden;
+}
+
+.left-nav .navbar-nav,
+.right-nav .navbar-nav {
+    height: var(--nav-height);
+}
+
+.left-nav .nav-link,
+.right-nav .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0;
+    transition: .15s;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.left-nav .nav-link:hover,
+.right-nav .nav-link:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.left-nav .nav-link,
+.right-nav .nav-link {
+    padding: 0 !important;
+}
