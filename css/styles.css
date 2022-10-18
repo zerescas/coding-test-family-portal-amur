@@ -5,6 +5,10 @@
 
     --site-accent: #B7C136;
 
+    --aqua: #5795aa;
+    --gold: #ffbe3b;
+    --pink: #d35f8e;
+
     /* Social Accents */
     --vk-accent: #5795aa;
     --twitter-accent: #7cb3ce;
@@ -12,15 +16,35 @@
     --instagram-accent: #5878b7;
     --ok-accent: #f2a64c;
 
+    --brown: #706a5e;
+    --blue-gray: #5e727c;
+    --dark-blue: #003249;
+
     /*==========
     Other 
     ==========*/
 
-    --section-max-width: 1150px;
+    --section-max-width: 1100px;
 
     --nav-height: 50px;
     --nav-link-padding: 2rem;
     --nav-corners-border-radius: .35rem;
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+.text-aqua {
+    color: var(--aqua);
+}
+
+.text-brown {
+    color: var(--brown);
 }
 
 .bg-accent {
@@ -37,6 +61,7 @@
     inset: 0;
     background-color: black;
     opacity: .25;
+    pointer-events: none;
 }
 
 /* Buttons */
@@ -121,7 +146,7 @@
 }
 
 .navbar-wrapper nav {
-    flex: 1 0 auto;
+    flex: 1 0 var(--section-max-width);
 }
 
 .navbar-dummy {
@@ -134,5 +159,76 @@
 /* Carousel */
 
 .carousel-caption-wrapper {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Cards statistics */
+
+.cards-stat-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.card-stat {
+    align-items: center;
+    border: solid 1px var(--site-accent);
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 2rem;
     position: relative;
+    text-align: center;
+    width: 16rem;
+}
+
+.card-stat::before,
+.card-stat::after {
+    content: "";
+    position: absolute;
+    background-color: var(--site-accent);
+    top: 0;
+    width: 20%;
+    height: 1px;
+}
+
+.card-stat::before {
+    left: 0;
+}
+
+.card-stat::after {
+    right: 0;
+}
+
+.card-stat__header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.card-stat__header-info {
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 18px;
+}
+
+.card-stat__description {
+    padding: 2rem 0 0;
+    color: var(--brown);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .navbar-dummy {
+        flex: 0 0 0;
+    }
+
 }

@@ -2,12 +2,15 @@
 
 * {
     font-family: 'Roboto' !important;
-    font-weight: 500 !important;
 
     /* font-style: normal !important;
     font-weight: 500 !important;
     font-size: 14px !important;
     line-height: 16px !important; */
+}
+
+.navbar * {
+    font-weight: 500 !important;
 }
 
 .navbar {
@@ -59,5 +62,24 @@
 /* Carousel */
 
 .carousel-caption {
-    left: 0;
+    position: static;
+    width: 400px;
+    pointer-events: none;
+}
+
+.carousel-indicators {
+    justify-content: flex-start;
+}
+
+.carousel-indicators li {
+    background-color: transparent;
+    background-color: white;
+    height: 4px;
+    opacity: .7;
+    position: relative;
+    width: 60px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--site-accent);
 }
