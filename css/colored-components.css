@@ -1,0 +1,84 @@
+/* Text Colors */
+
+.text-gold {
+    color: var(--gold);
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+.text-aqua {
+    color: var(--aqua);
+}
+
+.text-brown {
+    color: var(--brown);
+}
+
+.text-blue-gray {
+    color: var(--blue-gray);
+}
+
+.text-dark-orange {
+    color: var(--dark-orange);
+}
+
+.text-light-red {
+    color: var(--light-red);
+}
+
+.text-turquoise {
+    color: var(--turquoise);
+}
+
+.text-accent {
+    color: var(--site-accent);
+}
+
+/* Background Colors */
+
+.bg-gold {
+    background-color: var(--gold);
+    color: white;
+}
+
+.bg-pink {
+    background-color: var(--pink);
+    color: white;
+}
+
+.bg-aqua {
+    background-color: var(--aqua);
+    color: white;
+}
+
+.bg-brown {
+    background-color: var(--brown);
+    color: white;
+}
+
+.bg-blue-gray {
+    background-color: var(--blue-gray);
+    color: white;
+}
+
+.bg-dark-orange {
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.bg-light-red {
+    background-color: var(--light-red);
+    color: white;
+}
+
+.bg-turquoise {
+    background-color: var(--turquoise);
+    color: white;
+}
+
+.bg-accent {
+    background-color: var(--site-accent);
+    color: white;
+}
