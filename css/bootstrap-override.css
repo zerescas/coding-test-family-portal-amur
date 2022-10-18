@@ -9,6 +9,14 @@
     line-height: 16px !important; */
 }
 
+/* Buttons */
+
+.btn {
+    font-size: 14px;
+}
+
+/* Navbar */
+
 .navbar * {
     font-weight: 500 !important;
 }
