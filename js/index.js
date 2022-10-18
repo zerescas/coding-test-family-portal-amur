@@ -1,24 +1,25 @@
 const smallSocialsRow = `
     <div class="d-flex">
 
-        <a class="social social--small social--vk  mr-2" href="https://www.vk.com">
-            <img src="img/social/logo/vk.svg" alt="vk-icon">
+        <a class="social social--small social--dark social--vk mr-2" href="https://www.vk.com" aria-label="vk-link">
+            <i class="fa-brands fa-vk"></i>
         </a>
 
-        <a class="social social--small social--facebook mr-2" href="https://www.twitter.com">
-            <img src="img/social/logo/twitter.svg" alt="twitter-icon">
+        <a class="social social--small social--dark social--facebook mr-2" href="https://www.twitter.com" aria-label="twitter-link">
+            <i class="fa-brands fa-twitter fa-sm"></i>
         </a>
 
-        <a class="social social--small social--twitter mr-2" href="https://www.facebook.com">
-            <img src="img/social/logo/facebook.svg" alt="facebook-icon">
+        <a class="social social--small social--dark social--twitter mr-2" href="https://www.facebook.com" aria-label="facebook-link">
+            <i class="fa-brands fa-facebook-f fa-sm"></i>
         </a>
 
-        <a class="social social--small social--instagram mr-2" href="https://www.instagram.com">
-            <img src="img/social/logo/instagram.svg" alt="instagram-icon">
+        <a class="social social--small social--dark social--instagram mr-2" href="https://www.instagram.com"
+            aria-label="instagram-link">
+            <i class="fa-brands fa-instagram fa-sm"></i>
         </a>
 
-        <a class="social social--small social--ok" href="https://www.ok.ru">
-            <img src="img/social/logo/ok.svg" alt="ok-icon">
+        <a class="social social--small social--dark social--ok" href="https://www.ok.ru" aria-label="ok-link">
+            <i class="fa-brands fa-odnoklassniki fa-sm"></i>
         </a>
 
     </div>`;
