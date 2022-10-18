@@ -16,6 +16,8 @@
     Other 
     ==========*/
 
+    --section-max-width: 1150px;
+
     --nav-height: 50px;
     --nav-link-padding: 2rem;
     --nav-corners-border-radius: .35rem;
@@ -23,6 +25,18 @@
 
 .bg-accent {
     background-color: var(--site-accent);
+}
+
+.dark-overlay {
+    position: relative;
+}
+
+.dark-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: .25;
 }
 
 /* Buttons */
@@ -96,32 +110,29 @@
 /* Section width limiter */
 
 .width-limiter {
-    max-width: 1150px;
+    max-width: var(--section-max-width);
     margin: 0 auto;
 }
 
 /* Navbar's left, right decorators */
 
-.navbar-infinity {
-    position: relative;
+.navbar-wrapper {
+    display: flex;
 }
 
-.navbar-infinity::before,
-.navbar-infinity::after {
-    content: "";
+.navbar-wrapper nav {
+    flex: 1 0 auto;
+}
+
+.navbar-dummy {
     background-color: var(--site-accent);
-    height: 100%;
-    width: calc(100vw - 1100px);
-    position: absolute;
+    flex: 1 0 0;
     height: var(--nav-height);
+    align-self: flex-end;
 }
 
-.navbar-infinity::before {
-    left: 0;
-    transform: translateX(-100%);
-}
+/* Carousel */
 
-.navbar-infinity::after {
-    right: 0%;
-    transform: translateX(100%);
+.carousel-caption-wrapper {
+    position: relative;
 }

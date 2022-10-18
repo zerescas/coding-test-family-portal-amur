@@ -1,7 +1,13 @@
 /* Bootstrap override */
 
 * {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto' !important;
+    font-weight: 500 !important;
+
+    /* font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 16px !important; */
 }
 
 .navbar {
@@ -48,4 +54,10 @@
 .left-nav .nav-link,
 .right-nav .nav-link {
     padding: 0 !important;
+}
+
+/* Carousel */
+
+.carousel-caption {
+    left: 0;
 }
