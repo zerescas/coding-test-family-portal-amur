@@ -137,7 +137,7 @@ input:checked+.btn-top-line {
     width: 29px;
 }
 
-.social--dark {
+.dark .social {
     border-color: white;
     color: white;
 }
@@ -346,30 +346,30 @@ input:checked+.btn-top-line {
 
 /* Articles Component: Dark Topbar */
 
-.articles--dark hr {
+.dark hr {
     background-color: white;
 }
 
-.articles--dark .articles-topbar__header {
+.dark .articles-topbar__header {
     color: white;
 }
 
-.articles--dark .articles__btn-show {
+.dark .articles__btn-show {
     border-color: white;
     color: white;
 }
 
-.articles--dark .articles__btn-show:hover {
+.dark .articles__btn-show:hover {
     background-color: var(--site-accent);
     border-color: var(--site-accent);
     color: white;
 }
 
-.articles--dark .btn-top-line {
+.dark .btn-top-line {
     color: white;
 }
 
-.articles--dark .articles-topbar__nav-button {
+.dark .articles-topbar__nav-button {
     border-color: white;
     color: white
 }
