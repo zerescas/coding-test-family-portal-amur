@@ -144,7 +144,7 @@
     <section id="carousel-section">
 
         <div id="carouselHomePage" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators width-limiter justify-content-center justify-content-xl-start mb-3">
+            <ol class="carousel-indicators width-limiter justify-content-start mb-3">
                 <li data-target="#carouselHomePage" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselHomePage" data-slide-to="1"></li>
                 <li data-target="#carouselHomePage" data-slide-to="2"></li>
@@ -156,9 +156,9 @@
                         <img src="img/carousel/carousel-1.png" class="d-block w-100" alt="carousel1-img">
                     </a>
 
-                    <div class="carousel-caption-wrapper justify-content-center justify-content-xl-start width-limiter">
-                        <div class="carousel-caption text-center text-xl-left text-shadow-sm">
-                            <h2 class="carousel-caption__header mb-5">
+                    <div class="carousel-caption-wrapper width-limiter">
+                        <div class="carousel-caption text-left text-shadow-sm">
+                            <h2 class="carousel-caption__header mb-lg-3 mb-xl-4">
                                 Вся информация по развитию и поддержке семьи в одном месте.
                             </h2>
 
@@ -174,10 +174,9 @@
                         <img src="img/carousel/carousel-2.png" class="d-block w-100" alt="carousel2-img">
                     </a>
 
-                    <div
-                        class="carousel-caption-wrapper justify-content-center justify-content-xl-start  width-limiter">
-                        <div class="carousel-caption  text-center text-xl-left text-shadow-sm">
-                            <h2 class="carousel-caption__header mb-5">
+                    <div class="carousel-caption-wrapper justify-content-start  width-limiter">
+                        <div class="carousel-caption text-left text-shadow-sm">
+                            <h2 class="carousel-caption__header mb-lg-3 mb-xl-4">
                                 С наступающим 2020!
                             </h2>
 
@@ -193,10 +192,9 @@
                         <img src="img/carousel/carousel-3.png" class="d-block w-100" alt="carousel3-img">
                     </a>
 
-                    <div
-                        class="carousel-caption-wrapper justify-content-center justify-content-xl-start  width-limiter">
-                        <div class="carousel-caption text-center text-xl-left text-shadow-sm">
-                            <h2 class="carousel-caption__header mb-5 text-blue-gray">
+                    <div class="carousel-caption-wrapper justify-content-start  width-limiter">
+                        <div class="carousel-caption text-left text-shadow-sm">
+                            <h2 class="carousel-caption__header mb-lg-3 mb-xl-4 text-blue-gray">
                                 Многодетные семьи получат помощь на
                                 рождение детей
                             </h2>
@@ -251,7 +249,7 @@
             <div class="section-topbar">
                 <h2 class="section-topbar__header mr-auto">Все для семьи</h2>
 
-                <div class="section-topbar__buttons btn-group mr-3" role="group">
+                <div class="section-topbar__buttons btn-group mr-3 d-none d-lg-block" role="group">
                     <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-all"
                         autocomplete="off" checked>
                     <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="articles-filter-all">
@@ -287,7 +285,20 @@
                 </div>
             </div>
 
-            <hr class="section-hr w-100 mt-0 mb-5">
+            <hr class="section-hr w-100 mt-0 mb-lg-5">
+
+            <div class="dropdown custom-dropdown d-lg-none">
+                <button class="btn btn-filter-dropdown dropdown-toggle w-100 mr-2 py-2 text-left text-md-center"
+                    type="button" data-toggle="dropdown" aria-expanded="false">
+                    Фильтр
+                </button>
+                <div class="dropdown-menu w-100">
+                    <a class="dropdown-item">Всё</a>
+                    <a class="dropdown-item">Важное</a>
+                    <a class="dropdown-item">Новости</a>
+                    <a class="dropdown-item">Полезное</a>
+                </div>
+            </div>
 
             <div class="articles-container row justify-content-between m-0">
 
@@ -580,7 +591,7 @@
             <div class="section-topbar">
                 <h2 class="section-topbar__header mr-auto">События</h2>
 
-                <div class="section-topbar__buttons btn-group mr-3" role="group">
+                <div class="section-topbar__buttons btn-group mr-3 d-none d-lg-block" role="group">
                     <input type="radio" class="btn-check" name="events-filter" id="events-filter-all" autocomplete="off"
                         checked>
                     <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="events-filter-all">
@@ -616,7 +627,20 @@
                 </div>
             </div>
 
-            <hr class="section-hr w-100 mt-0 mb-5">
+            <hr class="section-hr w-100 mt-0 mb-lg-5">
+
+            <div class="dropdown custom-dropdown d-lg-none">
+                <button class="btn btn-filter-dropdown dropdown-toggle w-100 mr-2 py-2 text-left text-md-center"
+                    type="button" data-toggle="dropdown" aria-expanded="false">
+                    Фильтр
+                </button>
+                <div class="dropdown-menu w-100">
+                    <a class="dropdown-item">Всё</a>
+                    <a class="dropdown-item">Важное</a>
+                    <a class="dropdown-item">Новости</a>
+                    <a class="dropdown-item">Полезное</a>
+                </div>
+            </div>
 
             <div class="events-container row justify-content-between m-0">
 

@@ -74,6 +74,12 @@ Components
     color: var(--site-accent);
 }
 
+.btn-filter-dropdown {
+    background-color: white;
+    border-color: white;
+    color: var(--turquoise);
+}
+
 /* Button On Hover */
 
 .btn-hover-accent:hover {
@@ -117,12 +123,8 @@ Components
 
 /* Carousel */
 
-.carousel .carousel-item {
-    height: 400px;
-}
-
 .carousel-item img {
-    height: 100%;
+    min-height: 250px;
     object-fit: cover;
 }
 
@@ -147,32 +149,75 @@ Components
 .carousel-caption-wrapper {
     position: absolute;
     inset: 0;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     pointer-events: none;
 }
 
 .carousel-caption__header {
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: 700;
 }
 
 .carousel-caption__description {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
 }
 
-/* Extra Large */
-@media screen and (max-width: 1200px) {
+/* Dropdown */
 
-    .justify-self-xl-start {
+.custom-dropdown {
+    font-size: 16px;
+    font-weight: 400;
+    color: inherit;
+}
+
+.custom-dropdown .dropdown-menu {
+    color: inherit;
+}
+
+.custom-dropdown .dropdown-item {
+    color: inherit;
+}
+
+@media screen and (min-width: 0px) {
+
+    .carousel-caption-wrapper {
+        font-size: .7rem;
+    }
+}
+
+/* Small */
+@media screen and (min-width: 576px) {
+
+    .justify-self-sm-start {
         justify-self: start;
     }
 
-    .justify-self-xl-end {
+    .justify-self-sm-end {
         justify-self: end;
     }
 
+    .carousel-caption-wrapper {
+        font-size: .75rem;
+    }
+}
+
+/* Medium */
+@media screen and (min-width: 768px) {
+
+    .justify-self-md-start {
+        justify-self: start;
+    }
+
+    .justify-self-md-end {
+        justify-self: end;
+    }
+
+    .carousel-caption-wrapper {
+        font-size: .75rem;
+    }
 }
 
 /* Large */
@@ -198,29 +243,24 @@ Components
     .custom-navbar .navbar-nav .nav-link.btn-top-line::before {
         display: block;
     }
-}
 
-/* Medium */
-@media screen and (min-width: 768px) {
-
-    .justify-self-md-start {
-        justify-self: start;
-    }
-
-    .justify-self-md-end {
-        justify-self: end;
+    .carousel-caption-wrapper {
+        font-size: .8rem;
     }
 }
 
-/* Small */
-@media screen and (min-width: 576px) {
+/* Extra Large */
+@media screen and (min-width: 1200px) {
 
-    .justify-self-sm-start {
+    .justify-self-xl-start {
         justify-self: start;
     }
 
-    .justify-self-sm-end {
+    .justify-self-xl-end {
         justify-self: end;
     }
 
+    .carousel-caption-wrapper {
+        font-size: 1rem;
+    }
 }
