@@ -32,6 +32,10 @@
     color: var(--turquoise);
 }
 
+.text-darker-white {
+    color: var(--darker-white);
+}
+
 .text-accent {
     color: var(--site-accent);
 }
@@ -76,6 +80,11 @@
 .bg-turquoise {
     background-color: var(--turquoise);
     color: white;
+}
+
+.bg-darker-white {
+    background-color: var(--darker-white);
+    color: black;
 }
 
 .bg-accent {
