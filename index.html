@@ -27,7 +27,7 @@
         <!-- Mobile Nav -->
         <div class="d-flex flex-grow-1 d-block d-lg-none">
             <a class="d-block d-lg-none navbar-brand mr-auto" href="#">
-                <img src="/img/site-logo-text-only.svg" alt="site-logo">
+                <img src="img/site-logo-text-only-min.svg" alt="site-logo">
             </a>
 
             <button class="btn btn-outline-accent btn-hover-accent px-4 mr-2" type="button" aria-expanded="false"
@@ -88,21 +88,21 @@
                 <!-- Nav Items -->
                 <ul class="col navbar-nav grid-left-nav justify-content-between align-items-lg-center pr-lg-5">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">О портале</a>
+                        <a class="nav-link btn-top-line" href="#">О портале</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#for-all-family-section">Всё для семьи</a>
+                        <a class="nav-link btn-top-line" href="#for-all-family-section">Всё для семьи</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#events-section">События</a>
+                        <a class="nav-link btn-top-line" href="#events-section">События</a>
                     </li>
                 </ul>
 
                 <!-- Site Logo (Desktop Only) -->
                 <a class="d-none d-lg-block grid-site-logo mx-4 mb-2" href="#">
-                    <img src="/img/site-logo.png" alt="site-logo">
+                    <img src="img/site-logo.png" alt="site-logo">
                 </a>
 
                 <!-- Left Side -->
@@ -116,15 +116,15 @@
                 <!-- Nav Items -->
                 <ul class="navbar-nav grid-right-nav justify-content-between align-items-lg-center pl-lg-5">
                     <li class="nav-item">
-                        <a class="nav-link" href="#qa-section">Вопросы</a>
+                        <a class="nav-link btn-top-line" href="#qa-section">Вопросы</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                        <a class="nav-link btn-top-line" href="#">Контакты</a>
                     </li>
 
                     <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link" href="#" title="search-icon">
+                        <a class="nav-link btn-top-line" href="#" title="search-icon">
                             <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                         </a>
                     </li>
@@ -136,7 +136,7 @@
 
     <section id="carousel-section">
 
-        <div id="carouselHomePage" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="carouselHomePage" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators width-limiter justify-content-center justify-content-xl-start mb-3">
                 <li data-target="#carouselHomePage" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselHomePage" data-slide-to="1"></li>
@@ -405,7 +405,8 @@
                                 разнесены на независимые элементы?</div>
 
                             <a class="btn btn-outline-accent btn-hover-accent faq-item__switcher" data-toggle="collapse"
-                                href="#answer1" role="button" aria-expanded="false" aria-controls="collapseAnswer1">
+                                href="#answer1" role="button" aria-expanded="false" aria-controls="collapseAnswer1"
+                                title="faq-switcher">
                                 <i class="fa-solid fa-arrow-down fa-2xl"></i>
                             </a>
                         </div>
@@ -434,7 +435,8 @@
                                 плановых заданий требует анализа глубокомысленных рассуждений?</div>
 
                             <a class="btn btn-outline-accent btn-hover-accent faq-item__switcher" data-toggle="collapse"
-                                href="#answer2" role="button" aria-expanded="false" aria-controls="collapseAnswer2">
+                                href="#answer2" role="button" aria-expanded="false" aria-controls="collapseAnswer2"
+                                title="faq-switcher">
                                 <i class="fa-solid fa-arrow-down fa-2xl"></i>
                             </a>
                         </div>
@@ -463,7 +465,8 @@
                                 фракционных разногласий и своевременно верифицированы?</div>
 
                             <a class="btn btn-outline-accent btn-hover-accent faq-item__switcher" data-toggle="collapse"
-                                href="#answer3" role="button" aria-expanded="false" aria-controls="collapseAnswer3">
+                                href="#answer3" role="button" aria-expanded="false" aria-controls="collapseAnswer3"
+                                title="faq-switcher">
                                 <i class="fa-solid fa-arrow-down fa-2xl"></i>
                             </a>
                         </div>
@@ -495,7 +498,8 @@
                                 профессионального сообщества?</div>
 
                             <a class="btn btn-outline-accent btn-hover-accent faq-item__switcher" data-toggle="collapse"
-                                href="#answer4" role="button" aria-expanded="false" aria-controls="collapseAnswer4">
+                                href="#answer4" role="button" aria-expanded="false" aria-controls="collapseAnswer4"
+                                title="faq-switcher">
                                 <i class="fa-solid fa-arrow-down fa-2xl"></i>
                             </a>
                         </div>
@@ -530,7 +534,7 @@
                         <a class="btn btn-wide btn-outline-accent btn-hover-accent" href="#">Задать вопрос</a>
                     </div>
 
-                    <img class="mt-lg-4 d-none d-md-block align-self-center mb-4 mb-lg-0" src="/img/faq-banner-icon.png"
+                    <img class="mt-lg-4 d-none d-md-block align-self-center mb-4 mb-lg-0" src="img/faq-banner-icon.png"
                         alt="faq-banner-icon">
                 </div>
 
@@ -682,13 +686,10 @@
     </section>
 
     <footer class="text-center">
-
         <span>© 2001-2022, Управление ЗАГС Амурской области</span>
-
     </footer>
 
     <!-- Font Awesome -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js"
         integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

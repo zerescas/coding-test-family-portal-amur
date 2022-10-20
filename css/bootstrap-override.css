@@ -4,7 +4,35 @@
     font-family: 'Roboto' !important;
 }
 
-/* Helpers */
+/*==========
+Helpers
+==========*/
+
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.btn-sharp {
+    border-radius: 0;
+}
+
+.btn-wide {
+    padding: .7rem 3rem !important;
+}
+
+/* justify-self */
 
 .justify-self-start {
     justify-self: start;
@@ -14,10 +42,56 @@
     justify-self: end;
 }
 
+/*==========
+Components
+==========*/
+
 /* Buttons */
 
 .btn {
     font-size: 14px;
+}
+
+/* Button Outlines */
+
+.btn-outline-black {
+    border-color: black;
+    color: black;
+}
+
+.btn-outline-turquoise {
+    border-color: var(--turquoise);
+    color: var(--turquoise);
+}
+
+.btn-outline-blue-gray {
+    border-color: var(--blue-gray);
+    color: var(--blue-gray);
+}
+
+.btn-outline-accent {
+    border-color: var(--site-accent);
+    color: var(--site-accent);
+}
+
+/* Button On Hover */
+
+.btn-hover-accent:hover {
+    background-color: var(--site-accent);
+    border-color: var(--site-accent);
+    color: white;
+}
+
+/* Button Outline+OnHover */
+
+.btn-accent {
+    border-color: var(--site-accent);
+    background-color: var(--site-accent);
+    color: white;
+}
+
+.btn-accent:hover {
+    filter: brightness(.95);
 }
 
 /* Navbar Links */
@@ -32,17 +106,11 @@
     color: var(--site-accent);
 }
 
-.custom-navbar .navbar-nav .nav-link::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    content: "";
-    transition: .15s;
+.custom-navbar .navbar-nav .nav-link.btn-top-line::before {
+    display: none;
 }
 
-.custom-navbar .navbar-nav .nav-link:hover::before {
+.custom-navbar .navbar-nav .nav-link:hover.btn-top-line::before {
     background-color: white;
 }
 
@@ -73,6 +141,14 @@
 
 .carousel-indicators .active {
     background-color: var(--site-accent);
+}
+
+.carousel-caption-wrapper {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
 }
 
 /* Extra Large */
@@ -107,6 +183,9 @@
         color: white;
     }
 
+    .custom-navbar .navbar-nav .nav-link.btn-top-line::before {
+        display: block;
+    }
 }
 
 /* Medium */
@@ -119,7 +198,6 @@
     .justify-self-md-end {
         justify-self: end;
     }
-
 }
 
 /* Small */
