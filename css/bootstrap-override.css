@@ -102,6 +102,7 @@ Components
     font-size: 14px;
 }
 
+.custom-navbar .navbar-nav .nav-link:focus,
 .custom-navbar .navbar-nav .nav-link:hover {
     color: var(--site-accent);
 }
@@ -151,6 +152,16 @@ Components
     pointer-events: none;
 }
 
+.carousel-caption__header {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.carousel-caption__description {
+    font-size: 16px;
+    font-weight: 700;
+}
+
 /* Extra Large */
 @media screen and (max-width: 1200px) {
 
@@ -179,6 +190,7 @@ Components
         color: white;
     }
 
+    .custom-navbar .navbar-nav .nav-link:focus,
     .custom-navbar .navbar-nav .nav-link:hover {
         color: white;
     }
