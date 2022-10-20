@@ -1,3 +1,10 @@
+function replaceDummiesToOriginal(dummyClass, originalElement) {
+
+    const smallSocialsRows = $(`.${dummyClass}`);
+    smallSocialsRows.replaceWith(smallSocialsRow);
+
+}
+
 const smallSocialsRow = `
     <div class="d-flex">
 
@@ -24,5 +31,4 @@ const smallSocialsRow = `
 
     </div>`;
 
-const smallSocialsRows = $(".socials-row--small");
-smallSocialsRows.replaceWith(smallSocialsRow);
+replaceDummiesToOriginal("socials-row--small", smallSocialsRow);
