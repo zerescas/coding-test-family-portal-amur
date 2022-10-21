@@ -147,12 +147,12 @@ body {
 }
 
 input:checked+.btn-top-line::before {
-    background-color: var(--turquoise)
+    background-color: var(--site-accent);
 }
 
 .btn-top-line:hover,
 input:checked+.btn-top-line {
-    color: var(--turquoise)
+    color: var(--site-accent)
 }
 
 .btn-group input[type="radio"] {
@@ -380,6 +380,15 @@ input:checked+.btn-top-line {
     color: var(--blue-gray);
 }
 
+.section-topbar__buttons input:checked+.btn-top-line::before {
+    background-color: var(--turquoise);
+}
+
+.section-topbar__buttons .btn-top-line:hover,
+.section-topbar__buttons input:checked+.btn-top-line {
+    color: var(--turquoise);
+}
+
 /* Section Component: Dark Topbar */
 
 .dark .section-topbar__header {
@@ -408,6 +417,15 @@ input:checked+.btn-top-line {
 
 .dark .section-topbar__buttons .btn-top-line {
     color: white;
+}
+
+.dark .section-topbar__buttons input:checked+.btn-top-line::before {
+    background-color: var(--blue-gray);
+}
+
+.dark .section-topbar__buttons .btn-top-line:hover,
+.dark .section-topbar__buttons input:checked+.btn-top-line {
+    color: var(--blue-gray);
 }
 
 /* Card Article */
