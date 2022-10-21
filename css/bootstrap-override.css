@@ -32,6 +32,10 @@ Helpers
     padding: .7rem 3rem !important;
 }
 
+.scale-invert-x {
+    transform: scaleX(-100%);
+}
+
 /* justify-self */
 
 .justify-self-start {
@@ -218,6 +222,14 @@ Components
     .carousel-caption-wrapper {
         font-size: .75rem;
     }
+
+    .scale-invert-x-md {
+        transform: scaleX(-100%);
+    }
+
+    .scale-normal-x-md {
+        transform: scaleX(100%);
+    }
 }
 
 /* Large */
@@ -246,6 +258,14 @@ Components
 
     .carousel-caption-wrapper {
         font-size: .8rem;
+    }
+
+    .scale-invert-x-lg {
+        transform: scaleX(-100%);
+    }
+
+    .scale-normal-x-lg {
+        transform: scaleX(100%);
     }
 }
 
