@@ -402,6 +402,10 @@ input:checked+.btn-top-line {
     color: white
 }
 
+.dark .section-topbar__nav-button:hover {
+    border-color: var(--site-accent);
+}
+
 .dark .section-topbar__buttons .btn-top-line {
     color: white;
 }
@@ -520,7 +524,6 @@ input:checked+.btn-top-line {
 .faq-item__question {
     font-size: 14px;
     flex: 1 0 0;
-    margin-right: 3rem;
 }
 
 .faq-item__answer {
@@ -570,11 +573,6 @@ input:checked+.btn-top-line {
 }
 
 /* Sections */
-
-#stats-section {
-    /* margin-top: 6rem; */
-    /* margin-bottom: 6rem; */
-}
 
 #for-all-family-section {
     background: url("../img/for-all-family-min.svg") var(--darker-white);
