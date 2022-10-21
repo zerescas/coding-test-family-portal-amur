@@ -275,6 +275,9 @@ input:checked+.btn-top-line {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    border-bottom: solid 1px black;
+    position: relative;
+    overflow: hidden;
 }
 
 .section-topbar__header {
@@ -314,7 +317,6 @@ input:checked+.btn-top-line {
 /* Topbar Component: Search Area */
 
 .section-topbar__search {
-    position: relative;
     width: 20rem;
 }
 
@@ -323,6 +325,19 @@ input:checked+.btn-top-line {
     outline: none;
     border: none;
     background-color: transparent;
+}
+
+.section-topbar__search-effect {
+    bottom: 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    transition: background-color .15s;
+}
+
+.section-topbar__search-text:focus+.section-topbar__search-effect {
+    background-color: var(--site-accent);
 }
 
 .section-topbar__search-text::placeholder {
@@ -578,20 +593,16 @@ input:checked+.btn-top-line {
 
 /* Horizontal Lines */
 
-section .section-hr {
-    background-color: var(--turquoise);
+section .section-topbar {
+    border-color: var(--turquoise);
 }
 
-.faq-items .section-hr {
-    background-color: var(--light-gray);
+#qa-section .section-topbar {
+    border-color: var(--light-gray);
 }
 
-#qa-section .section-hr {
-    background-color: var(--site-accent);
-}
-
-.dark .section-hr {
-    background-color: white;
+.dark .section-topbar {
+    border-color: white;
 }
 
 footer {
