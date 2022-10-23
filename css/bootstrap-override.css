@@ -149,12 +149,13 @@ Components
 
 .carousel-item img {
     object-fit: cover;
+    min-height: 120px;
 }
 
 .carousel-caption {
     pointer-events: none;
     position: static;
-    width: 400px;
+    width: 60%;
 }
 
 .carousel-indicators li {
@@ -206,11 +207,17 @@ Components
 
 @media screen and (min-width: 0px) {
     .carousel-caption-wrapper {
-        font-size: .6rem;
+        font-size: .5rem;
     }
 
-    .carousel-item img {
-        min-height: 150px;
+    .carousel-indicators li {
+        width: 18.77px;
+        height: 1.25px;
+    }
+
+    .carousel-indicators.width-limiter,
+    .carousel-caption-wrapper.width-limiter {
+        --section-limit-width-padding: .7rem;
     }
 }
 
@@ -227,6 +234,16 @@ Components
     .carousel-caption-wrapper {
         font-size: .6rem;
     }
+
+    .carousel-indicators li {
+        width: 45px;
+        height: 3px;
+    }
+
+    .carousel-indicators.width-limiter,
+    .carousel-caption-wrapper.width-limiter {
+        --section-limit-width-padding: unset;
+    }
 }
 
 /* Medium */
@@ -237,10 +254,6 @@ Components
 
     .justify-self-md-end {
         justify-self: end;
-    }
-
-    .carousel-item img {
-        min-height: 250px;
     }
 
     .carousel-caption-wrapper {
@@ -270,10 +283,6 @@ Components
         display: block;
     }
 
-    .carousel-item img {
-        min-height: initial;
-    }
-
     .carousel-caption-wrapper {
         font-size: .8rem;
     }
@@ -289,6 +298,12 @@ Components
 
 /* Extra Large */
 @media screen and (min-width: 1200px) {
+
+    .carousel-indicators li {
+        width: 60px;
+        height: 4px;
+    }
+
     .justify-self-xl-start {
         justify-self: start;
     }
