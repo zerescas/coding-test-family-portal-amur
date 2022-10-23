@@ -62,6 +62,11 @@ Components
     font-size: 14px;
 }
 
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
 /* Button Outlines */
 
 .btn-outline-black {
