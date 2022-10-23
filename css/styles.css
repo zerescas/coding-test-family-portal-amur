@@ -540,7 +540,7 @@ input:checked+.btn-top-line {
     width: 16.75rem;
 }
 
-.card-article-tag {
+.card-article__tag {
     align-items: center;
     border-radius: .3rem;
     display: flex;
