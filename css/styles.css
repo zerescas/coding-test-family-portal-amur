@@ -538,6 +538,7 @@ input:checked+.btn-top-line {
     overflow: hidden;
     transition: transform .15s;
     width: 16.75rem;
+    height: 19.875rem;
 }
 
 .card-article__tag {
@@ -603,10 +604,6 @@ input:checked+.btn-top-line {
 
 .card-article--immersive .card-body {
     justify-content: flex-end;
-}
-
-.card-article--immersive .card-img-top-wrapper {
-    height: 12rem;
 }
 
 .card-article--immersive .card-img-top-wrapper {
