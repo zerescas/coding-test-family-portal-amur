@@ -700,10 +700,6 @@ input:checked+.btn-top-line {
     background-size: cover;
 }
 
-#qa-section {
-    background-color: white;
-}
-
 #events-section {
     background-color: #7cb3cd;
 }
