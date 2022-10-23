@@ -128,10 +128,6 @@ Components
     color: var(--site-accent);
 }
 
-.custom-navbar .navbar-nav .nav-link.btn-top-line::before {
-    display: none;
-}
-
 .custom-navbar .navbar-nav .nav-link:hover.btn-top-line::before {
     background-color: white;
 }
@@ -277,10 +273,6 @@ Components
 
     .justify-self-lg-end {
         justify-self: end;
-    }
-
-    .custom-navbar .navbar-nav .nav-link.btn-top-line::before {
-        display: block;
     }
 
     .carousel-caption-wrapper {
