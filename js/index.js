@@ -52,14 +52,14 @@ $(".sidebar-collapser-btn").on("click", function () {
     switchSidebar();
 });
 
-// Disable sidebar for large and bigger screens
+// Disable sidebar for >= large screens
 let lastWindowWidth;
 $(window).resize(function () {
-    const currentWindowWidth = window.screen.width;
+    const currentWindowWidth = window.innerWidth;
 
     if (lastWindowWidth < 991 && currentWindowWidth >= 991) {
         switchSidebar(false);
     }
 
-    lastWindowWidth = window.screen.width;
+    lastWindowWidth = currentWindowWidth;
 });
