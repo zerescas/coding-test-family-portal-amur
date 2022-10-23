@@ -24,9 +24,7 @@
 
     --turquoise: #007bba;
     --blue-gray: #5e727c;
-    --dark-blue: #003249;
-    --dark-teal: #023248;
-    /* TODO: DARK-BLUE && DARK-TEAL are same! */
+    --dark-blue: #023248;
 
     --dark-orange: #d68f32;
     --light-red: #ed564a;
@@ -46,7 +44,7 @@
 }
 
 body {
-    color: var(--dark-teal);
+    color: var(--dark-blue);
 }
 
 /* Dark Overlay */
@@ -102,16 +100,17 @@ body {
 .sidebar-menu {
     background-color: var(--darker-white);
     bottom: 0;
-    z-index: 1;
     position: fixed;
     top: 0;
     transform: translateX(calc(var(--navbar-width) * -1));
-    transition: transform .35s;
+    transition: transform .35s, visibility .35s 0s;
     width: var(--navbar-width);
+    z-index: 1;
+    visibility: hidden;
 }
 
 .page-content {
-    transition: .35s;
+    transition: transform .35s;
 }
 
 .base-wrapper.toggled .page-content {
@@ -120,6 +119,7 @@ body {
 
 .base-wrapper.toggled .sidebar-menu {
     transform: translateX(0px);
+    visibility: visible;
 }
 
 /* Sidebar Nav */
@@ -766,7 +766,7 @@ footer {
     .sidebar-menu {
         left: 0;
         right: 0;
-        width: auto;
+        width: 100%;
         transform: translateX(calc(100% * -1));
     }
 
