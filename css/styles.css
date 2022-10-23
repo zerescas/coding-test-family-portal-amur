@@ -139,8 +139,7 @@ body {
 .sidebar-menu__search>input {
     background-color: transparent;
     border-radius: .3rem;
-    border: solid 1px gray;
-    color: gray;
+    border: solid 1px var(--gray);
     display: block;
     font-size: 13px;
     outline: none;
@@ -149,12 +148,16 @@ body {
     transition: border-color .15s;
 }
 
+.sidebar-menu__search>input::placeholder {
+    color: var(--gray);
+}
+
 .sidebar-menu__search>input:focus {
     border-color: var(--site-accent);
 }
 
 .sidebar-menu__search>button {
-    color: gray;
+    color: var(--gray);
     position: absolute;
     right: 5%;
     top: 50%;
