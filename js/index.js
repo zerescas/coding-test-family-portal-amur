@@ -32,3 +32,34 @@ const smallSocialsRow = `
     </div>`;
 
 replaceDummiesToOriginal("socials-row--small", smallSocialsRow);
+
+// Sidebar button
+function switchSidebar(forceMode) {
+    const baseWrapper = $(".base-wrapper");
+    const body = $("body");
+
+    if (forceMode == null) {
+        baseWrapper.toggleClass("toggled");
+        body.toggleClass("overflow-hidden");
+        return;
+    }
+
+    forceMode ? baseWrapper.addClass("toggled") : baseWrapper.removeClass("toggled");
+    forceMode ? body.addClass("overflow-hidden") : body.removeClass("overflow-hidden");
+}
+
+$(".sidebar-collapser-btn").on("click", function () {
+    switchSidebar();
+});
+
+// Disable sidebar for large and bigger screens
+let lastWindowWidth;
+$(window).resize(function () {
+    const currentWindowWidth = window.screen.width;
+
+    if (lastWindowWidth < 991 && currentWindowWidth >= 991) {
+        switchSidebar(false);
+    }
+
+    lastWindowWidth = window.screen.width;
+});

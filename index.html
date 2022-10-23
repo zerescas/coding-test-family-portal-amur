@@ -24,60 +24,34 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light px-3 px-lg-0 py-3 pb-lg-0">
-
-        <!-- Mobile Nav -->
-        <div class="d-flex flex-grow-1 d-block d-lg-none">
-            <a class="d-block d-lg-none navbar-brand mr-auto" href="#">
-                <img src="img/site-logo-text-only-min.svg" alt="site-logo">
-            </a>
-
-            <button class="btn btn-outline-accent btn-hover-accent px-4 mr-2" type="button" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-            </button>
-
-            <button class="btn btn-outline-accent btn-hover-accent px-4" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars fa-lg"></i>
-            </button>
-        </div>
 
 
-        <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
+    <div class="base-wrapper">
 
-            <div class="dark-lg custom-navbar flex-grow-1">
+        <div class="sidebar-menu d-flex">
 
-                <!-- Splitter for mobile view -->
-                <hr class="d-block d-lg-none w-100 grid-hr">
+            <!-- Sidebar Content -->
+            <div class="navbar-nav d-flex flex-grow-1 h-100 p-4">
 
-                <!-- Infinity nav dummies -->
-                <div class="grid-left-nav-dummy bg-accent"></div>
-                <div class="grid-right-nav-dummy bg-accent"></div>
-
-                <!-- Navs background -->
-                <div class="rounded-right bg-accent grid-left-nav d-none d-lg-block"></div>
-                <div class="rounded-left bg-accent grid-right-nav d-none d-lg-block"></div>
-
-                <!-- Left Side -->
                 <!-- Socials -->
-                <div class="d-flex grid-socials align-items-lg-center mb-4 mb-lg-0 mt-1 mt-lg-0">
-                    <a class="social social--vk mr-3 mr-lg-4" href="https://www.vk.com" aria-label="vk-link">
+                <div class="grid-socials d-flex d-sm-none 
+                            align-items-center mb-4">
+
+                    <a class="social social--vk mr-auto mr-md-4" href="https://www.vk.com" aria-label="vk-link">
                         <i class="fa-brands fa-vk"></i>
                     </a>
 
-                    <a class="social social--twitter mr-3 mr-lg-4" href="https://www.twitter.com"
+                    <a class="social social--twitter mr-auto mr-md-4" href="https://www.twitter.com"
                         aria-label="twitter-link">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
 
-                    <a class="social social--facebook mr-3 mr-lg-4" href="https://www.facebook.com"
+                    <a class="social social--facebook mr-auto mr-md-4" href="https://www.facebook.com"
                         aria-label="facebook-link">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
-                    <a class="social social--instagram mr-3 mr-lg-4" href="https://www.instagram.com"
+                    <a class="social social--instagram mr-auto mr-md-4" href="https://www.instagram.com"
                         aria-label="instagram-link">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
@@ -85,684 +59,826 @@
                     <a class="social social--ok" href="https://www.ok.ru" aria-label="odnoklassniki-link">
                         <i class="fa-brands fa-odnoklassniki"></i>
                     </a>
+
                 </div>
 
-                <!-- Nav Items -->
-                <ul class="col navbar-nav grid-left-nav justify-content-between align-items-lg-center pr-lg-5">
-                    <li class="nav-item">
-                        <a class="nav-link btn-top-line" href="#">О портале</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link btn-top-line" href="#for-all-family-section">Всё для семьи</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link btn-top-line" href="#events-section">События</a>
-                    </li>
-                </ul>
-
-                <!-- Site Logo (Desktop Only) -->
-                <a class="d-none d-lg-block grid-site-logo mx-4 mb-2" href="#">
-                    <img src="img/site-logo.png" alt="site-logo">
-                </a>
-
-                <!-- Left Side -->
-                <!-- Contact Us -->
-                <div class="grid-contact-us justify-self-lg-end align-self-lg-center mb-2 mb-lg-0">
-                    <button class="btn btn-wide btn-outline-blue-gray btn-hover-accent" type="button">
-                        Написать нам
+                <div class="sidebar-menu__search position-relative mb-4">
+                    <input class="" type="text" name="x" id="x" placeholder="Поиск по сайту">
+                    <button type="button" class="btn-reset" title="search-icon">
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                     </button>
                 </div>
 
-                <!-- Nav Items -->
-                <div class="navbar-nav grid-right-nav justify-content-between align-items-lg-center pl-lg-5">
+                <div class="nav-item">
+                    <a class="nav-link mb-2 mb-sm-3" href="#">Главная</a>
+                </div>
 
-                    <div class="d-lg-flex justify-content-between">
-                        <div class="nav-item">
-                            <a class="nav-link btn-top-line" href="#qa-section">Вопросы</a>
+                <div class="nav-item">
+                    <a class="nav-link mb-2 mb-sm-3" href="#">О портале</a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="nav-link mb-2 mb-sm-3" href="#">Всё для семьи</a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="nav-link mb-2 mb-sm-3" href="#">События</a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="nav-link mb-2 mb-sm-3" href="#">Вопросы</a>
+                </div>
+
+                <div class="nav-item flex-grow-1">
+                    <a class="nav-link mb-2 mb-sm-3" href="#">Контакты</a>
+                </div>
+
+                <button class="btn btn-wide btn-outline-blue-gray btn-hover-accent mb-4" type="button">
+                    Написать нам
+                </button>
+
+                <img class="d-none d-sm-block" src="/img/navbar-descorator-min.svg" alt="navbar-decorator">
+
+            </div>
+
+            <!-- Sidebar Close Button -->
+            <div class="bg-accent px-2 d-block d-sm-none">
+                <button type="button" class="sidebar-collapser-btn btn-reset mt-4" title="search-icon">
+                    <i class="fa-solid fa-xmark fa-2xl text-white"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="page-content">
+
+            <nav class="navbar navbar-light p-0 pt-3">
+
+                <div class="dark-lg custom-navbar flex-grow-1">
+
+                    <!-- Infinity nav dummies -->
+                    <div class="grid-left-nav-dummy bg-accent"></div>
+                    <div class="grid-right-nav-dummy bg-accent"></div>
+
+                    <!-- Navs background -->
+                    <div class="rounded-right bg-accent grid-left-nav"></div>
+                    <div class="rounded-left bg-accent grid-right-nav"></div>
+
+                    <!-- Left Side -->
+                    <!-- Socials -->
+                    <div class="grid-socials d-none d-sm-flex 
+                                    align-items-center my-md-0">
+
+                        <a class="social social--vk mr-auto mr-md-4" href="https://www.vk.com" aria-label="vk-link">
+                            <i class="fa-brands fa-vk"></i>
+                        </a>
+
+                        <a class="social social--twitter mr-auto mr-md-4" href="https://www.twitter.com"
+                            aria-label="twitter-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a class="social social--facebook mr-auto mr-md-4" href="https://www.facebook.com"
+                            aria-label="facebook-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a class="social social--instagram mr-auto mr-md-4" href="https://www.instagram.com"
+                            aria-label="instagram-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a class="social social--ok mr-auto mr-md-0" href="https://www.ok.ru"
+                            aria-label="odnoklassniki-link">
+                            <i class="fa-brands fa-odnoklassniki"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- Nav Items -->
+                    <div class="navbar-nav grid-left-nav flex-row
+                                    justify-content-around justify-content-sm-start justify-content-lg-between align-items-center 
+                                    pr-4 pr-lg-5">
+
+
+                        <button class="btn sidebar-collapser-btn grid-left-nav d-block d-lg-none p-0" type="button"
+                            aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle sidebar">
+                            <i class="fa-solid fa-bars fa-xl text-white"></i>
+                        </button>
+
+                        <div class="nav-item d-none d-lg-block">
+                            <a class="nav-link btn-top-line" href="#">О портале</a>
                         </div>
 
-                        <div class="nav-item pl-lg-5">
+                        <div class="nav-item d-none d-lg-block">
+                            <a class="nav-link btn-top-line" href="#">Всё для семьи</a>
+                        </div>
+
+                        <div class="nav-item d-none d-lg-block">
+                            <a class="nav-link btn-top-line" href="#">События</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Site Logo -->
+                    <a class="grid-site-logo align-self-end
+                                  mx-3 mx-sm-4 mb-2" href="#">
+                        <img class="w-100" src="img/site-logo-min.svg" alt="site-logo">
+                    </a>
+
+                    <!-- Left Side -->
+                    <!-- Contact Us -->
+                    <div class="grid-contact-us d-none d-sm-block 
+                                    justify-self-end align-self-center 
+                                    mb-0 p-0">
+                        <button class="btn btn-wide btn-outline-blue-gray btn-hover-accent
+                                           px-0 px-sm-4 px-md-5" type="button">
+                            Написать нам
+                        </button>
+                    </div>
+
+                    <!-- Nav Items -->
+                    <div class="navbar-nav grid-right-nav flex-row 
+                                   justify-content-around justify-content-sm-end justify-content-lg-between align-items-center 
+                                   pl-4 pl-lg-5">
+
+                        <div class="nav-item d-none d-lg-block">
+                            <a class="nav-link btn-top-line" href="#">Вопросы</a>
+                        </div>
+
+                        <div class="nav-item d-none d-lg-block mr-5">
                             <a class="nav-link btn-top-line" href="#">Контакты</a>
+                        </div>
+
+                        <a class="nav-link btn-top-line 
+                                      justify-self-end
+                                      ml-0 ml-lg-5" href="#" title="search-icon">
+                            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <section id="carousel-section">
+
+                <div id="carouselHomePage" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators width-limiter justify-content-start mb-3">
+                        <li data-target="#carouselHomePage" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselHomePage" data-slide-to="1"></li>
+                        <li data-target="#carouselHomePage" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <a class="dark-overlay dark-overlay-15" href="#">
+                                <img src="img/carousel/carousel-1.png" class="d-block w-100" alt="carousel1-img">
+                            </a>
+
+                            <div class="carousel-caption-wrapper width-limiter">
+                                <div class="carousel-caption text-left text-shadow-sm">
+                                    <h2 class="carousel-caption__header mb-lg-3 mb-xl-4">
+                                        Вся информация по развитию и поддержке семьи в одном месте.
+                                    </h2>
+
+                                    <p class="carousel-caption__description">
+                                        При поддержке правительства Амурской области
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img src="img/carousel/carousel-2.png" class="d-block w-100" alt="carousel2-img">
+                            </a>
+
+                            <div class="carousel-caption-wrapper justify-content-start  width-limiter">
+                                <div class="carousel-caption text-left text-shadow-sm">
+                                    <h2 class="carousel-caption__header mb-lg-3 mb-xl-4 text-blue-gray">
+                                        С наступающим 2020!
+                                    </h2>
+
+                                    <p class="carousel-caption__description text-blue-gray">
+                                        Здоровья и любви Вам в новом году!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img src="img/carousel/carousel-3.png" class="d-block w-100" alt="carousel3-img">
+                            </a>
+
+                            <div class="carousel-caption-wrapper justify-content-start  width-limiter">
+                                <div class="carousel-caption text-left text-shadow-sm">
+                                    <h2 class="carousel-caption__header mb-lg-3 mb-xl-4 text-blue-gray">
+                                        Многодетные семьи получат помощь на
+                                        рождение детей
+                                    </h2>
+
+                                    <p class="carousel-caption__description text-blue-gray">
+                                        Уже со следующего месяца многодетные семьи будут получать
+                                        увеличенные пособия на детей. На заседании ...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="stats-section" class="width-limiter pt-5 pb-3 pb-md-5">
+
+                <div class="row justify-content-around py-0 py-md-2 px-3 px-md-0">
+
+                    <div class="col-12 col-md-4 col-lg-3 py-4 px-2">
+                        <div class="card-stat">
+                            <div class="card-stat__header text-aqua">57</div>
+                            <p class="card-stat__description">семьям, обратившимся к нам, мы помогли</p>
                         </div>
                     </div>
 
-                    <div class="nav-item d-none d-lg-block">
-                        <a class="nav-link btn-top-line" href="#" title="search-icon">
+                    <div class="col-12 col-md-4 col-lg-3 py-4 px-2">
+                        <div class="card-stat">
+                            <div class="card-stat__header text-gold">24/7</div>
+                            <p class="card-stat__description">мы принимаем обращения ежедневно</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3 py-4 px-2">
+                        <div class="card-stat">
+                            <div class="card-stat__header card-stat__header-info text-brown">более</div>
+                            <div class="card-stat__header text-pink">100</div>
+                            <p class="card-stat__description">квалифицированных сотрудников</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="for-all-family-section" class="py-5">
+
+                <div class="width-limiter d-flex flex-column">
+
+                    <div class="section-topbar mb-3 mb-md-5">
+                        <h2 class="section-topbar__header pb-1 mr-auto">Все для семьи</h2>
+
+                        <div class="section-topbar__buttons btn-group mr-3 d-none d-md-block" role="group">
+                            <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-all"
+                                autocomplete="off" checked>
+                            <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="articles-filter-all">
+                                Всё
+                            </label>
+
+                            <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-important"
+                                autocomplete="off">
+                            <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4"
+                                for="articles-filter-important">
+                                Важное
+                            </label>
+
+                            <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-news"
+                                autocomplete="off">
+                            <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="articles-filter-news">
+                                Новости
+                            </label>
+
+                            <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-useful"
+                                autocomplete="off">
+                            <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="articles-filter-useful">
+                                Полезное
+                            </label>
+                        </div>
+
+                        <div class="section-topbar__nav-buttons">
+                            <a class="btn section-topbar__nav-button btn-sharp border-right-0 border-bottom-0">
+                                <i class="fa-solid fa-angle-left fa-lg"></i>
+                            </a>
+                            <a class="btn section-topbar__nav-button btn-sharp border-bottom-0">
+                                <i class="fa-solid fa-angle-right fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown custom-dropdown d-md-none">
+                        <button class="btn btn-filter-dropdown dropdown-toggle w-100 mr-2 py-2 text-left text-md-center"
+                            type="button" data-toggle="dropdown" aria-expanded="false">
+                            Фильтр
+                        </button>
+                        <div class="dropdown-menu w-100">
+                            <a class="dropdown-item">Всё</a>
+                            <a class="dropdown-item">Важное</a>
+                            <a class="dropdown-item">Новости</a>
+                            <a class="dropdown-item">Полезное</a>
+                        </div>
+                    </div>
+
+                    <div class="articles-container d-flex flex-nowrap overflow-auto pb-3">
+
+                        <div class="p-3">
+                            <a class="card card-article" href="">
+                                <div class="card-img-top-wrapper">
+                                    <img class="card-img-top" src="img/articles/for-all-family/Article1.png"
+                                        alt="article-img">
+                                </div>
+
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-article-tag bg-blue-gray">
+                                        Семейные ценности и меры поддержки семьи
+                                    </div>
+
+                                    <p class="card-article__description" href="#">
+                                        Постоянный количественный рост определил дальнейшее развитие!
+                                    </p>
+
+                                    <div class="d-flex">
+                                        <span class="card-article__date mr-auto">23.12.2019г.</span>
+                                        <div class="socials-row--small"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="p-3">
+                            <a class="card card-article" href="">
+                                <div class="card-img-top-wrapper">
+                                    <img class="card-img-top" src="img/articles/for-all-family/Article2.png"
+                                        alt="article-img">
+                                </div>
+
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-article-tag bg-light-red">
+                                        Защита прав и законных интересов детей
+                                    </div>
+
+                                    <p class="card-article__description" href="#">
+                                        Чистый разум не скован границами
+                                    </p>
+
+                                    <div class="d-flex card-article__date">
+                                        <span class="card-article__date mr-auto">23.12.2019г.</span>
+                                        <div class="socials-row--small"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="p-3">
+                            <a class="card card-article" href="#">
+                                <div class="card-img-top-wrapper">
+                                    <img class="card-img-top" src="img/articles/for-all-family/Article3.png"
+                                        alt="article-img">
+                                </div>
+
+
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-article-tag bg-accent">
+                                        Семья и здоровье
+                                    </div>
+
+                                    <p class="card-article__description" href="#">
+                                        Экономическая повестка сегодняшнего дня станет частью наших традиций
+                                    </p>
+
+                                    <div class="d-flex card-article__date">
+                                        <span class="card-article__date mr-auto">23.12.2019г.</span>
+                                        <div class="socials-row--small"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="p-3">
+                            <a class="card card-article" href="">
+                                <div class="card-img-top-wrapper">
+                                    <img class="card-img-top" src="img/articles/for-all-family/Article4.png"
+                                        alt="article-img">
+                                </div>
+
+
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-article-tag bg-dark-orange">
+                                        Семейный досуг и спорт
+                                    </div>
+
+                                    <p class="card-article__description" href="#">
+                                        Инцидент не исчерпан: героям были возданы соответствующие почести!
+                                    </p>
+
+                                    <div class="d-flex card-article__date">
+                                        <span class="card-article__date mr-auto">23.12.2019г.</span>
+                                        <div class="socials-row--small"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="btn btn-wide section__btn-show-all mt-4 align-self-center">
+                        Посмотреть всё
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section id="qa-section" class="py-5">
+
+                <div class="width-limiter d-flex flex-column">
+
+                    <div class="section-topbar mb-5">
+                        <h2 class="section-topbar__header flex-grow-1 pb-1">Вопрос - Ответ</h2>
+
+                        <div class="section-topbar__search d-none d-md-block mr-4">
+                            <input class="section-topbar__search-text w-100" type="text" name="s" id="s" title="s"
+                                placeholder="Введите сюда ключевое слово вашего вопроса" autocomplete="off">
+                            <div class="section-topbar__search-effect"></div>
+                        </div>
+
+                        <a class="section-topbar__icon mr-2" title="search-icon">
                             <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                         </a>
                     </div>
 
-                </div>
+                    <div class="row m-0">
 
-            </div>
+                        <div class="col-md-12 col-lg-9 mb-4 pl-0 pr-0 pr-lg-5">
 
-        </div>
-    </nav>
+                            <h2 class="faq-items__header text-turquoise mb-4">Часто Задаваемые Вопросы</h2>
 
-    <section id="carousel-section">
+                            <div class="faq-item">
 
-        <div id="carouselHomePage" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators width-limiter justify-content-start mb-3">
-                <li data-target="#carouselHomePage" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselHomePage" data-slide-to="1"></li>
-                <li data-target="#carouselHomePage" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
+                                <div class="d-flex justify-content-between align-items-end align-items-md-center">
+                                    <div class="faq-item__question mr-4 mr-md-5">Являясь всего лишь частью общей
+                                        картины,
+                                        сторонники
+                                        тоталитаризма в науке формируют глобальную экономическую сеть и при этом -
+                                        функционально
+                                        разнесены на независимые элементы?</div>
 
-                <div class="carousel-item active">
-                    <a class="dark-overlay dark-overlay-15" href="#">
-                        <img src="img/carousel/carousel-1.png" class="d-block w-100" alt="carousel1-img">
-                    </a>
+                                    <a class="btn faq-item__switcher ml-2 ml-md-5" data-toggle="collapse"
+                                        href="#answer1" role="button" aria-expanded="false"
+                                        aria-controls="collapseAnswer1" title="faq-switcher">
+                                        <i class="fa-solid fa-arrow-down fa-2xl"></i>
+                                    </a>
+                                </div>
 
-                    <div class="carousel-caption-wrapper width-limiter">
-                        <div class="carousel-caption text-left text-shadow-sm">
-                            <h2 class="carousel-caption__header mb-lg-3 mb-xl-4">
-                                Вся информация по развитию и поддержке семьи в одном месте.
-                            </h2>
+                                <div class="collapse mt-3" id="answer1">
+                                    <div class="card card-body faq-item__answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Non curabitur gravida arcu ac.
+                                        Nulla
+                                        porttitor massa id neque aliquam. Elit at
+                                        imperdiet dui accumsan sit amet nulla facilisi. Lorem mollis aliquam ut
+                                        porttitor
+                                        leo a
+                                        diam sollicitudin tempor. Metus
+                                        aliquam eleifend mi in nulla posuere. Varius vel pharetra vel turpis nunc eget.
+                                        Aliquam
+                                        sem fringilla ut morbi
+                                        tincidunt augue interdum velit.
+                                    </div>
+                                </div>
 
-                            <p class="carousel-caption__description">
-                                При поддержке правительства Амурской области
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#">
-                        <img src="img/carousel/carousel-2.png" class="d-block w-100" alt="carousel2-img">
-                    </a>
-
-                    <div class="carousel-caption-wrapper justify-content-start  width-limiter">
-                        <div class="carousel-caption text-left text-shadow-sm">
-                            <h2 class="carousel-caption__header mb-lg-3 mb-xl-4 text-blue-gray">
-                                С наступающим 2020!
-                            </h2>
-
-                            <p class="carousel-caption__description text-blue-gray">
-                                Здоровья и любви Вам в новом году!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#">
-                        <img src="img/carousel/carousel-3.png" class="d-block w-100" alt="carousel3-img">
-                    </a>
-
-                    <div class="carousel-caption-wrapper justify-content-start  width-limiter">
-                        <div class="carousel-caption text-left text-shadow-sm">
-                            <h2 class="carousel-caption__header mb-lg-3 mb-xl-4 text-blue-gray">
-                                Многодетные семьи получат помощь на
-                                рождение детей
-                            </h2>
-
-                            <p class="carousel-caption__description text-blue-gray">
-                                Уже со следующего месяца многодетные семьи будут получать
-                                увеличенные пособия на детей. На заседании ...
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section id="stats-section" class="width-limiter py-5">
-
-        <div class="row justify-content-around py-3">
-
-            <div class="col-12 col-md-4 col-lg-3 py-4">
-                <div class="card-stat">
-                    <div class="card-stat__header text-aqua">57</div>
-                    <p class="card-stat__description">семьям, обратившимся к нам, мы помогли</p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 col-lg-3 py-4">
-                <div class="card-stat">
-                    <div class="card-stat__header text-gold">24/7</div>
-                    <p class="card-stat__description">мы принимаем обращения ежедневно</p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 col-lg-3 py-4">
-                <div class="card-stat">
-                    <div class="card-stat__header card-stat__header-info text-brown">более</div>
-                    <div class="card-stat__header text-pink">100</div>
-                    <p class="card-stat__description">квалифицированных сотрудников</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="for-all-family-section" class="py-5">
-
-        <div class="width-limiter d-flex flex-column">
-
-            <div class="section-topbar mb-3 mb-md-5">
-                <h2 class="section-topbar__header pb-1 mr-auto">Все для семьи</h2>
-
-                <div class="section-topbar__buttons btn-group mr-3 d-none d-md-block" role="group">
-                    <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-all"
-                        autocomplete="off" checked>
-                    <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="articles-filter-all">
-                        Всё
-                    </label>
-
-                    <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-important"
-                        autocomplete="off">
-                    <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="articles-filter-important">
-                        Важное
-                    </label>
-
-                    <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-news"
-                        autocomplete="off">
-                    <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="articles-filter-news">
-                        Новости
-                    </label>
-
-                    <input type="radio" class="btn-check" name="articles-filter" id="articles-filter-useful"
-                        autocomplete="off">
-                    <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="articles-filter-useful">
-                        Полезное
-                    </label>
-                </div>
-
-                <div class="section-topbar__nav-buttons">
-                    <a class="btn section-topbar__nav-button btn-sharp border-right-0 border-bottom-0">
-                        <i class="fa-solid fa-angle-left fa-lg"></i>
-                    </a>
-                    <a class="btn section-topbar__nav-button btn-sharp border-bottom-0">
-                        <i class="fa-solid fa-angle-right fa-lg"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="dropdown custom-dropdown d-md-none">
-                <button class="btn btn-filter-dropdown dropdown-toggle w-100 mr-2 py-2 text-left text-md-center"
-                    type="button" data-toggle="dropdown" aria-expanded="false">
-                    Фильтр
-                </button>
-                <div class="dropdown-menu w-100">
-                    <a class="dropdown-item">Всё</a>
-                    <a class="dropdown-item">Важное</a>
-                    <a class="dropdown-item">Новости</a>
-                    <a class="dropdown-item">Полезное</a>
-                </div>
-            </div>
-
-            <div class="articles-container d-flex flex-nowrap overflow-auto pb-3">
-
-                <div class="p-3">
-                    <a class="card card-article" href="">
-                        <div class="card-img-top-wrapper">
-                            <img class="card-img-top" src="img/articles/for-all-family/Article1.png" alt="article-img">
-                        </div>
-
-                        <div class="card-body d-flex flex-column">
-                            <div class="card-article-tag bg-blue-gray">
-                                Семейные ценности и меры поддержки семьи
                             </div>
 
-                            <p class="card-article__description" href="#">
-                                Постоянный количественный рост определил дальнейшее развитие!
-                            </p>
+                            <hr class="w-100">
 
-                            <div class="d-flex">
-                                <span class="card-article__date mr-auto">23.12.2019г.</span>
-                                <div class="socials-row--small"></div>
+                            <div class="faq-item">
+
+                                <div class="d-flex justify-content-between align-items-end align-items-md-center">
+                                    <div class="faq-item__question mr-4 mr-md-5">
+                                        Не следует, однако, забывать, что реализация намеченных плановых заданий требует
+                                        анализа
+                                        глубокомысленных рассуждений?</div>
+
+                                    <a class="btn faq-item__switcher ml-2 ml-md-5" data-toggle="collapse"
+                                        href="#answer2" role="button" aria-expanded="false"
+                                        aria-controls="collapseAnswer2" title="faq-switcher">
+                                        <i class="fa-solid fa-arrow-down fa-2xl"></i>
+                                    </a>
+                                </div>
+
+                                <div class="collapse mt-3" id="answer2">
+                                    <div class="card card-body faq-item__answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Non curabitur gravida arcu ac.
+                                        Nulla
+                                        porttitor massa id neque aliquam. Elit at
+                                        imperdiet dui accumsan sit amet nulla facilisi. Lorem mollis aliquam ut
+                                        porttitor
+                                        leo a
+                                        diam sollicitudin tempor. Metus
+                                        aliquam eleifend mi in nulla posuere. Varius vel pharetra vel turpis nunc eget.
+                                        Aliquam
+                                        sem fringilla ut morbi
+                                        tincidunt augue interdum velit.
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-                    </a>
-                </div>
 
-                <div class="p-3">
-                    <a class="card card-article" href="">
-                        <div class="card-img-top-wrapper">
-                            <img class="card-img-top" src="img/articles/for-all-family/Article2.png" alt="article-img">
-                        </div>
+                            <hr class="w-100">
 
-                        <div class="card-body d-flex flex-column">
-                            <div class="card-article-tag bg-light-red">
-                                Защита прав и законных интересов детей
+                            <div class="faq-item">
+
+                                <div class="d-flex justify-content-between align-items-end align-items-md-center">
+                                    <div class="faq-item__question mr-4 mr-md-5">Внезапно, предприниматели в сети
+                                        интернет
+                                        лишь
+                                        добавляют
+                                        фракционных разногласий и своевременно верифицированы?</div>
+
+                                    <a class="btn faq-item__switcher ml-2 ml-md-5" data-toggle="collapse"
+                                        href="#answer3" role="button" aria-expanded="false"
+                                        aria-controls="collapseAnswer3" title="faq-switcher">
+                                        <i class="fa-solid fa-arrow-down fa-2xl"></i>
+                                    </a>
+                                </div>
+
+                                <div class="collapse mt-3" id="answer3">
+                                    <div class="card card-body faq-item__answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Non curabitur gravida arcu ac.
+                                        Nulla
+                                        porttitor massa id neque aliquam. Elit at
+                                        imperdiet dui accumsan sit amet nulla facilisi. Lorem mollis aliquam ut
+                                        porttitor
+                                        leo a
+                                        diam sollicitudin tempor. Metus
+                                        aliquam eleifend mi in nulla posuere. Varius vel pharetra vel turpis nunc eget.
+                                        Aliquam
+                                        sem fringilla ut morbi
+                                        tincidunt augue interdum velit.
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <p class="card-article__description" href="#">
-                                Чистый разум не скован границами
+                            <hr class="w-100">
+
+                            <div class="faq-item">
+
+                                <div class="d-flex justify-content-between align-items-end align-items-md-center">
+                                    <div class="faq-item__question mr-4 mr-md-5">С другой стороны, выбранный нами
+                                        инновационный
+                                        путь
+                                        позволяет оценить значение приоритизации разума над эмоциями. С
+                                        другой стороны, дальнейшее развитие различных форм деятельности требует
+                                        определения
+                                        и
+                                        уточнения прогресса
+                                        профессионального сообщества?</div>
+
+                                    <a class="btn faq-item__switcher ml-2 ml-md-5" data-toggle="collapse"
+                                        href="#answer4" role="button" aria-expanded="false"
+                                        aria-controls="collapseAnswer4" title="faq-switcher">
+                                        <i class="fa-solid fa-arrow-down fa-2xl"></i>
+                                    </a>
+                                </div>
+
+                                <div class="collapse mt-3" id="answer4">
+                                    <div class="card card-body faq-item__answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Non curabitur gravida arcu ac.
+                                        Nulla
+                                        porttitor massa id neque aliquam. Elit at
+                                        imperdiet dui accumsan sit amet nulla facilisi. Lorem mollis aliquam ut
+                                        porttitor
+                                        leo a
+                                        diam sollicitudin tempor. Metus
+                                        aliquam eleifend mi in nulla posuere. Varius vel pharetra vel turpis nunc eget.
+                                        Aliquam
+                                        sem fringilla ut morbi
+                                        tincidunt augue interdum velit.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <hr class="w-100">
+
+                            <a class="link" href="#">
+                                Смотреть все вопросы и ответы
+                                <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </a>
+
+                        </div>
+
+                        <!-- Vertical FAQ Banner (All except Medium size) -->
+                        <div class="faq-banner align-self-start p-5
+                                        col col-lg-3
+                                        d-block d-md-none d-lg-block">
+                            <div class="faq-banner__content mb-4">
+                                <p class="faq-banner__description mb-4">
+                                    Наши специалисты готовы ответить на Ваши вопросы.
+                                </p>
+
+                                <a class="btn py-2 faq-banner__ask-button col" href="#">
+                                    Задать вопрос
+                                </a>
+                            </div>
+
+                            <img class="p-0 col-auto" src="img/faq-banner-icon.png" alt="faq-banner-icon">
+                        </div>
+
+                        <!-- Horizontal FAQ Banner (Only Medium size) -->
+                        <div class="faq-banner d-none d-md-flex d-lg-none col px-5 py-4
+                                        align-self-start justify-content-between">
+                            <img class="p-0 scale-invert-x col-2" src="img/faq-banner-icon.png" alt="faq-banner-icon">
+
+                            <p class="faq-banner__description m-0 col-5">
+                                Наши специалисты готовы ответить на Ваши вопросы.
                             </p>
 
-                            <div class="d-flex card-article__date">
-                                <span class="card-article__date mr-auto">23.12.2019г.</span>
-                                <div class="socials-row--small"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="p-3">
-                    <a class="card card-article" href="#">
-                        <div class="card-img-top-wrapper">
-                            <img class="card-img-top" src="img/articles/for-all-family/Article3.png" alt="article-img">
-                        </div>
-
-
-                        <div class="card-body d-flex flex-column">
-                            <div class="card-article-tag bg-accent">
-                                Семья и здоровье
-                            </div>
-
-                            <p class="card-article__description" href="#">
-                                Экономическая повестка сегодняшнего дня станет частью наших традиций
-                            </p>
-
-                            <div class="d-flex card-article__date">
-                                <span class="card-article__date mr-auto">23.12.2019г.</span>
-                                <div class="socials-row--small"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="p-3">
-                    <a class="card card-article" href="">
-                        <div class="card-img-top-wrapper">
-                            <img class="card-img-top" src="img/articles/for-all-family/Article4.png" alt="article-img">
-                        </div>
-
-
-                        <div class="card-body d-flex flex-column">
-                            <div class="card-article-tag bg-dark-orange">
-                                Семейный досуг и спорт
-                            </div>
-
-                            <p class="card-article__description" href="#">
-                                Инцидент не исчерпан: героям были возданы соответствующие почести!
-                            </p>
-
-                            <div class="d-flex card-article__date">
-                                <span class="card-article__date mr-auto">23.12.2019г.</span>
-                                <div class="socials-row--small"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <button type="button" class="btn btn-wide section__btn-show-all mt-4 align-self-center">
-                Посмотреть всё
-            </button>
-
-        </div>
-
-    </section>
-
-    <section id="qa-section" class="py-5">
-
-        <div class="width-limiter d-flex flex-column">
-
-            <div class="section-topbar mb-5">
-                <h2 class="section-topbar__header flex-grow-1 pb-1">Вопрос - Ответ</h2>
-
-                <div class="section-topbar__search d-none d-md-block mr-4">
-                    <input class="section-topbar__search-text w-100" type="text" name="s" id="s" title="s"
-                        placeholder="Введите сюда ключевое слово вашего вопроса" autocomplete="off">
-                    <div class="section-topbar__search-effect"></div>
-                </div>
-
-                <a class="section-topbar__icon mr-2" title="search-icon">
-                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                </a>
-            </div>
-
-            <div class="row m-0">
-
-                <div class="col-md-12 col-lg-9 mb-4 pl-0 pr-0 pr-lg-5">
-
-                    <h2 class="faq-items__header text-turquoise mb-4">Часто Задаваемые Вопросы</h2>
-
-                    <div class="faq-item">
-
-                        <div class="d-flex justify-content-between align-items-end align-items-md-center">
-                            <div class="faq-item__question mr-4 mr-md-5">Являясь всего лишь частью общей картины,
-                                сторонники
-                                тоталитаризма в науке формируют глобальную экономическую сеть и при этом - функционально
-                                разнесены на независимые элементы?</div>
-
-                            <a class="btn faq-item__switcher ml-2 ml-md-5" data-toggle="collapse" href="#answer1"
-                                role="button" aria-expanded="false" aria-controls="collapseAnswer1"
-                                title="faq-switcher">
-                                <i class="fa-solid fa-arrow-down fa-2xl"></i>
+                            <a class="btn py-2 faq-banner__ask-button col-4" href="#">
+                                Задать вопрос
                             </a>
                         </div>
 
-                        <div class="collapse mt-3" id="answer1">
-                            <div class="card card-body faq-item__answer">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Non curabitur gravida arcu ac. Nulla
-                                porttitor massa id neque aliquam. Elit at
-                                imperdiet dui accumsan sit amet nulla facilisi. Lorem mollis aliquam ut porttitor leo a
-                                diam sollicitudin tempor. Metus
-                                aliquam eleifend mi in nulla posuere. Varius vel pharetra vel turpis nunc eget. Aliquam
-                                sem fringilla ut morbi
-                                tincidunt augue interdum velit.
-                            </div>
-                        </div>
-
                     </div>
-
-                    <hr class="w-100">
-
-                    <div class="faq-item">
-
-                        <div class="d-flex justify-content-between align-items-end align-items-md-center">
-                            <div class="faq-item__question mr-4 mr-md-5">
-                                Не следует, однако, забывать, что реализация намеченных плановых заданий требует анализа
-                                глубокомысленных рассуждений?</div>
-
-                            <a class="btn faq-item__switcher ml-2 ml-md-5" data-toggle="collapse" href="#answer2"
-                                role="button" aria-expanded="false" aria-controls="collapseAnswer2"
-                                title="faq-switcher">
-                                <i class="fa-solid fa-arrow-down fa-2xl"></i>
-                            </a>
-                        </div>
-
-                        <div class="collapse mt-3" id="answer2">
-                            <div class="card card-body faq-item__answer">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Non curabitur gravida arcu ac. Nulla
-                                porttitor massa id neque aliquam. Elit at
-                                imperdiet dui accumsan sit amet nulla facilisi. Lorem mollis aliquam ut porttitor leo a
-                                diam sollicitudin tempor. Metus
-                                aliquam eleifend mi in nulla posuere. Varius vel pharetra vel turpis nunc eget. Aliquam
-                                sem fringilla ut morbi
-                                tincidunt augue interdum velit.
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <hr class="w-100">
-
-                    <div class="faq-item">
-
-                        <div class="d-flex justify-content-between align-items-end align-items-md-center">
-                            <div class="faq-item__question mr-4 mr-md-5">Внезапно, предприниматели в сети интернет лишь
-                                добавляют
-                                фракционных разногласий и своевременно верифицированы?</div>
-
-                            <a class="btn faq-item__switcher ml-2 ml-md-5" data-toggle="collapse" href="#answer3"
-                                role="button" aria-expanded="false" aria-controls="collapseAnswer3"
-                                title="faq-switcher">
-                                <i class="fa-solid fa-arrow-down fa-2xl"></i>
-                            </a>
-                        </div>
-
-                        <div class="collapse mt-3" id="answer3">
-                            <div class="card card-body faq-item__answer">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Non curabitur gravida arcu ac. Nulla
-                                porttitor massa id neque aliquam. Elit at
-                                imperdiet dui accumsan sit amet nulla facilisi. Lorem mollis aliquam ut porttitor leo a
-                                diam sollicitudin tempor. Metus
-                                aliquam eleifend mi in nulla posuere. Varius vel pharetra vel turpis nunc eget. Aliquam
-                                sem fringilla ut morbi
-                                tincidunt augue interdum velit.
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <hr class="w-100">
-
-                    <div class="faq-item">
-
-                        <div class="d-flex justify-content-between align-items-end align-items-md-center">
-                            <div class="faq-item__question mr-4 mr-md-5">С другой стороны, выбранный нами инновационный
-                                путь
-                                позволяет оценить значение приоритизации разума над эмоциями. С
-                                другой стороны, дальнейшее развитие различных форм деятельности требует определения и
-                                уточнения прогресса
-                                профессионального сообщества?</div>
-
-                            <a class="btn faq-item__switcher ml-2 ml-md-5" data-toggle="collapse" href="#answer4"
-                                role="button" aria-expanded="false" aria-controls="collapseAnswer4"
-                                title="faq-switcher">
-                                <i class="fa-solid fa-arrow-down fa-2xl"></i>
-                            </a>
-                        </div>
-
-                        <div class="collapse mt-3" id="answer4">
-                            <div class="card card-body faq-item__answer">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Non curabitur gravida arcu ac. Nulla
-                                porttitor massa id neque aliquam. Elit at
-                                imperdiet dui accumsan sit amet nulla facilisi. Lorem mollis aliquam ut porttitor leo a
-                                diam sollicitudin tempor. Metus
-                                aliquam eleifend mi in nulla posuere. Varius vel pharetra vel turpis nunc eget. Aliquam
-                                sem fringilla ut morbi
-                                tincidunt augue interdum velit.
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <hr class="w-100">
-
-                    <a class="link" href="#">
-                        Смотреть все вопросы и ответы
-                        <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </a>
 
                 </div>
 
-                <!-- Vertical FAQ Banner (All except Medium size) -->
-                <div class="faq-banner align-self-start p-5
-                            col col-lg-3
-                            d-block d-md-none d-lg-block">
-                    <div class="faq-banner__content mb-4">
-                        <p class="faq-banner__description mb-4">
-                            Наши специалисты готовы ответить на Ваши вопросы.
-                        </p>
+            </section>
 
-                        <a class="btn py-2 faq-banner__ask-button col" href="#">
-                            Задать вопрос
-                        </a>
+            <section id="events-section" class="position-relative py-5">
+
+                <!-- Decorators -->
+                <img class="position-absolute left-0 bottom-0 ml-4 mb-5 d-none d-md-block" src="img/men-group-icon.png"
+                    alt="men-group-icon">
+                <img class="position-absolute right-0 bottom-0 mr-4 mb-5 d-none d-md-block"
+                    src="img/women-group-icon.png" alt="women-group-icon">
+
+                <div class="dark width-limiter d-flex flex-column position-relative">
+
+                    <div class="section-topbar mb-3 mb-md-5">
+                        <h2 class="section-topbar__header mr-auto pb-1">События</h2>
+
+                        <div class="section-topbar__buttons btn-group mr-3 d-none d-md-block" role="group">
+                            <input type="radio" class="btn-check" name="events-filter" id="events-filter-all"
+                                autocomplete="off" checked>
+                            <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="events-filter-all">
+                                Всё
+                            </label>
+
+                            <input type="radio" class="btn-check" name="events-filter" id="events-filter-important"
+                                autocomplete="off">
+                            <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4"
+                                for="events-filter-important">
+                                Важное
+                            </label>
+
+                            <input type="radio" class="btn-check" name="events-filter" id="events-filter-news"
+                                autocomplete="off">
+                            <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="events-filter-news">
+                                Новости
+                            </label>
+
+                            <input type="radio" class="btn-check" name="events-filter" id="events-filter-useful"
+                                autocomplete="off">
+                            <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="events-filter-useful">
+                                Полезное
+                            </label>
+                        </div>
+
+                        <div class="section-topbar__nav-buttons">
+                            <a class="btn section-topbar__nav-button btn-sharp border-right-0 border-bottom-0">
+                                <i class="fa-solid fa-angle-left fa-lg"></i>
+                            </a>
+                            <a class="btn section-topbar__nav-button btn-sharp border-bottom-0">
+                                <i class="fa-solid fa-angle-right fa-lg"></i>
+                            </a>
+                        </div>
                     </div>
 
-                    <img class="p-0 col-auto" src="img/faq-banner-icon.png" alt="faq-banner-icon">
+                    <div class="dropdown custom-dropdown d-md-none">
+                        <button class="btn btn-filter-dropdown dropdown-toggle w-100 mr-2 py-2 text-left text-md-center"
+                            type="button" data-toggle="dropdown" aria-expanded="false">
+                            Фильтр
+                        </button>
+                        <div class="dropdown-menu w-100">
+                            <a class="dropdown-item">Всё</a>
+                            <a class="dropdown-item">Важное</a>
+                            <a class="dropdown-item">Новости</a>
+                            <a class="dropdown-item">Полезное</a>
+                        </div>
+                    </div>
+
+                    <div class="articles-container d-flex flex-nowrap overflow-auto pb-3">
+
+                        <div class="p-3">
+                            <a class="card card-article card-article-immersive" href="">
+                                <div class="card-img-top-wrapper">
+                                    <img class="card-img-top" src="img/articles/events/Event1.png" alt="article-img">
+                                </div>
+
+                                <div class="card-body">
+                                    <p class="card-article__description" href="#">
+                                        Известный инсайдер, в преддверии важного события, бодрит
+                                    </p>
+
+                                    <div class="d-flex">
+                                        <span class="card-article__date mr-auto">23.12.2019г.</span>
+
+                                        <!-- Replace with socials row through js -->
+                                        <div class="socials-row--small"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="p-3">
+                            <a class="card card-article card-article-immersive" href="">
+                                <div class="card-img-top-wrapper">
+                                    <img class="card-img-top" src="img/articles/events/Event2.png" alt="article-img">
+                                </div>
+
+                                <div class="card-body">
+                                    <p class="card-article__description" href="#">
+                                        Британские ученые заявили, что объемы выросли
+                                    </p>
+
+                                    <div class="d-flex card-article__date">
+                                        <span class="card-article__date mr-auto">23.12.2019г.</span>
+
+                                        <!-- Replace with socials row through js -->
+                                        <div class="socials-row--small"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="p-3">
+                            <a class="card card-article card-article-immersive" href="#">
+                                <div class="card-img-top-wrapper">
+                                    <img class="card-img-top" src="img/articles/events/Event3.png" alt="article-img">
+                                </div>
+
+
+                                <div class="card-body">
+                                    <p class="card-article__description" href="#">
+                                        Очевидцы сообщают, что слышали звон колоколов
+                                    </p>
+
+                                    <div class="d-flex card-article__date">
+                                        <span class="card-article__date mr-auto">23.12.2019г.</span>
+
+                                        <!-- Replace with socials row through js -->
+                                        <div class="socials-row--small"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="p-3">
+                            <a class="card card-article card-article-immersive" href="">
+                                <div class="card-img-top-wrapper">
+                                    <img class="card-img-top" src="img/articles/events/Event4.png" alt="article-img">
+                                </div>
+
+
+                                <div class="card-body">
+                                    <p class="card-article__description" href="#">
+                                        Доблесть наших правозащитников оказалась чрезвычайно полезной!
+                                    </p>
+
+                                    <div class="d-flex card-article__date">
+                                        <span class="card-article__date mr-auto">23.12.2019г.</span>
+
+                                        <!-- Replace with socials row through js -->
+                                        <div class="socials-row--small"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <button type="button"
+                        class="btn btn-wide section__btn-show-all mt-4 align-self-center position-relative">
+                        Посмотреть всё
+                    </button>
+
                 </div>
 
-                <!-- Horizontal FAQ Banner (Only Medium size) -->
-                <div class="faq-banner d-none d-md-flex d-lg-none col px-5 py-4
-                            align-self-start justify-content-between">
-                    <img class="p-0 scale-invert-x col-2" src="img/faq-banner-icon.png" alt="faq-banner-icon">
+            </section>
 
-                    <p class="faq-banner__description m-0 col-5">
-                        Наши специалисты готовы ответить на Ваши вопросы.
-                    </p>
-
-                    <a class="btn py-2 faq-banner__ask-button col-4" href="#">
-                        Задать вопрос
-                    </a>
-                </div>
-
-            </div>
+            <footer class="text-center">
+                <span>© 2001-2022, Управление ЗАГС Амурской области</span>
+            </footer>
 
         </div>
 
-    </section>
-
-    <section id="events-section" class="position-relative py-5">
-
-        <!-- Decorators -->
-        <img class="position-absolute left-0 bottom-0 ml-4 mb-5 d-none d-md-block" src="img/men-group-icon.png"
-            alt="men-group-icon">
-        <img class="position-absolute right-0 bottom-0 mr-4 mb-5 d-none d-md-block" src="img/women-group-icon.png"
-            alt="women-group-icon">
-
-        <div class="dark width-limiter d-flex flex-column position-relative">
-
-            <div class="section-topbar mb-3 mb-md-5">
-                <h2 class="section-topbar__header mr-auto pb-1">События</h2>
-
-                <div class="section-topbar__buttons btn-group mr-3 d-none d-md-block" role="group">
-                    <input type="radio" class="btn-check" name="events-filter" id="events-filter-all" autocomplete="off"
-                        checked>
-                    <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="events-filter-all">
-                        Всё
-                    </label>
-
-                    <input type="radio" class="btn-check" name="events-filter" id="events-filter-important"
-                        autocomplete="off">
-                    <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="events-filter-important">
-                        Важное
-                    </label>
-
-                    <input type="radio" class="btn-check" name="events-filter" id="events-filter-news"
-                        autocomplete="off">
-                    <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="events-filter-news">
-                        Новости
-                    </label>
-
-                    <input type="radio" class="btn-check" name="events-filter" id="events-filter-useful"
-                        autocomplete="off">
-                    <label class="btn btn-top-line px-1 my-2 my-md-0 mr-3 mr-md-4" for="events-filter-useful">
-                        Полезное
-                    </label>
-                </div>
-
-                <div class="section-topbar__nav-buttons">
-                    <a class="btn section-topbar__nav-button btn-sharp border-right-0 border-bottom-0">
-                        <i class="fa-solid fa-angle-left fa-lg"></i>
-                    </a>
-                    <a class="btn section-topbar__nav-button btn-sharp border-bottom-0">
-                        <i class="fa-solid fa-angle-right fa-lg"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="dropdown custom-dropdown d-md-none">
-                <button class="btn btn-filter-dropdown dropdown-toggle w-100 mr-2 py-2 text-left text-md-center"
-                    type="button" data-toggle="dropdown" aria-expanded="false">
-                    Фильтр
-                </button>
-                <div class="dropdown-menu w-100">
-                    <a class="dropdown-item">Всё</a>
-                    <a class="dropdown-item">Важное</a>
-                    <a class="dropdown-item">Новости</a>
-                    <a class="dropdown-item">Полезное</a>
-                </div>
-            </div>
-
-            <div class="articles-container d-flex flex-nowrap overflow-auto pb-3">
-
-                <div class="p-3">
-                    <a class="card card-article card-article-immersive" href="">
-                        <div class="card-img-top-wrapper">
-                            <img class="card-img-top" src="img/articles/events/Event1.png" alt="article-img">
-                        </div>
-
-                        <div class="card-body">
-                            <p class="card-article__description" href="#">
-                                Известный инсайдер, в преддверии важного события, бодрит
-                            </p>
-
-                            <div class="d-flex">
-                                <span class="card-article__date mr-auto">23.12.2019г.</span>
-
-                                <!-- Replace with socials row through js -->
-                                <div class="socials-row--small"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="p-3">
-                    <a class="card card-article card-article-immersive" href="">
-                        <div class="card-img-top-wrapper">
-                            <img class="card-img-top" src="img/articles/events/Event2.png" alt="article-img">
-                        </div>
-
-                        <div class="card-body">
-                            <p class="card-article__description" href="#">
-                                Британские ученые заявили, что объемы выросли
-                            </p>
-
-                            <div class="d-flex card-article__date">
-                                <span class="card-article__date mr-auto">23.12.2019г.</span>
-
-                                <!-- Replace with socials row through js -->
-                                <div class="socials-row--small"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="p-3">
-                    <a class="card card-article card-article-immersive" href="#">
-                        <div class="card-img-top-wrapper">
-                            <img class="card-img-top" src="img/articles/events/Event3.png" alt="article-img">
-                        </div>
-
-
-                        <div class="card-body">
-                            <p class="card-article__description" href="#">
-                                Очевидцы сообщают, что слышали звон колоколов
-                            </p>
-
-                            <div class="d-flex card-article__date">
-                                <span class="card-article__date mr-auto">23.12.2019г.</span>
-
-                                <!-- Replace with socials row through js -->
-                                <div class="socials-row--small"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="p-3">
-                    <a class="card card-article card-article-immersive" href="">
-                        <div class="card-img-top-wrapper">
-                            <img class="card-img-top" src="img/articles/events/Event4.png" alt="article-img">
-                        </div>
-
-
-                        <div class="card-body">
-                            <p class="card-article__description" href="#">
-                                Доблесть наших правозащитников оказалась чрезвычайно полезной!
-                            </p>
-
-                            <div class="d-flex card-article__date">
-                                <span class="card-article__date mr-auto">23.12.2019г.</span>
-
-                                <!-- Replace with socials row through js -->
-                                <div class="socials-row--small"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <button type="button" class="btn btn-wide section__btn-show-all mt-4 align-self-center position-relative">
-                Посмотреть всё
-            </button>
-
-        </div>
-
-    </section>
-
-    <footer class="text-center">
-        <span>© 2001-2022, Управление ЗАГС Амурской области</span>
-    </footer>
+    </div>
 
     <!-- Font Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js"

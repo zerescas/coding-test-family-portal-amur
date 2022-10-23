@@ -29,7 +29,13 @@ Helpers
 }
 
 .btn-wide {
-    padding: .7rem 3rem !important;
+    padding: .7rem 3rem;
+}
+
+.btn-reset {
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
 
 .scale-invert-x {
@@ -125,6 +131,15 @@ Components
     background-color: white;
 }
 
+.custom-navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.custom-navbar .navbar-nav .nav-link:focus,
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: white;
+}
+
 /* Carousel */
 
 .carousel-item img {
@@ -185,7 +200,6 @@ Components
 }
 
 @media screen and (min-width: 0px) {
-
     .carousel-caption-wrapper {
         font-size: .6rem;
     }
@@ -197,7 +211,6 @@ Components
 
 /* Small */
 @media screen and (min-width: 576px) {
-
     .justify-self-sm-start {
         justify-self: start;
     }
@@ -213,7 +226,6 @@ Components
 
 /* Medium */
 @media screen and (min-width: 768px) {
-
     .justify-self-md-start {
         justify-self: start;
     }
@@ -241,22 +253,12 @@ Components
 
 /* Large */
 @media screen and (min-width: 991px) {
-
     .justify-self-lg-start {
         justify-self: start;
     }
 
     .justify-self-lg-end {
         justify-self: end;
-    }
-
-    .custom-navbar .navbar-nav .nav-link {
-        color: white;
-    }
-
-    .custom-navbar .navbar-nav .nav-link:focus,
-    .custom-navbar .navbar-nav .nav-link:hover {
-        color: white;
     }
 
     .custom-navbar .navbar-nav .nav-link.btn-top-line::before {
@@ -282,7 +284,6 @@ Components
 
 /* Extra Large */
 @media screen and (min-width: 1200px) {
-
     .justify-self-xl-start {
         justify-self: start;
     }
@@ -293,5 +294,12 @@ Components
 
     .carousel-caption-wrapper {
         font-size: 1rem;
+    }
+}
+
+/* Double Extra Large */
+@media screen and (min-width: 1400px) {
+    .carousel-caption-wrapper {
+        font-size: 1.1rem;
     }
 }
