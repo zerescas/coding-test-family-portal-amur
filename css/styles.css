@@ -371,6 +371,20 @@ input:checked+.btn-top-line {
     font-weight: 700;
 }
 
+/* Section Topbar Colors */
+
+section .section-topbar {
+    border-color: var(--turquoise);
+}
+
+#qa-section .section-topbar {
+    border-color: var(--light-gray);
+}
+
+.dark .section-topbar {
+    border-color: white;
+}
+
 /* Topbar Component: Nav Buttons */
 
 .section-topbar__buttons {
@@ -690,7 +704,7 @@ input:checked+.btn-top-line {
 /* Sections */
 
 #for-all-family-section {
-    background: url("../img/for-all-family-min.svg") var(--darker-white);
+    background: url("../img/decorators/for-all-family-decorator-min.svg") var(--darker-white);
     background-origin: content-box;
     background-repeat: space;
     background-size: cover;
@@ -698,20 +712,6 @@ input:checked+.btn-top-line {
 
 #events-section {
     background-color: #7cb3cd;
-}
-
-/* Horizontal Lines */
-
-section .section-topbar {
-    border-color: var(--turquoise);
-}
-
-#qa-section .section-topbar {
-    border-color: var(--light-gray);
-}
-
-.dark .section-topbar {
-    border-color: white;
 }
 
 footer {
