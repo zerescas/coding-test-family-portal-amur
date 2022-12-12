@@ -10,4 +10,4 @@ Coding test with checking HTML / CSS + Bootstrap knowledges
   - Custom properties
   - Flexbox
   - Grid
-- Javascript
+- Javascript.
